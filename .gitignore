@@ -1,0 +1,10 @@
+tmp/*
+temp/*
+cache/*
+ThinkPHP/*
+Admin/Runtime*
+App/Runtime/*
+Public/editor
+Public/Admin
+Uploads/*
+

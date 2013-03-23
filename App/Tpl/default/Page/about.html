@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>{$moduleTitle}</title>
+<link  type="text/css"  rel="stylesheet" href="__PUBLIC__/css/css.css"/>
+</head>
+<body>
+<include file="Public:header" />
+<!--单页-->
+
+ <div class="bannar">
+<img src="Public/img/b1.jpg" width="980" height="298" alt="b1" /></div> 
+<div class="main">
+  <div class="left_list">
+  <h3>蓝天概况</h3>
+  <ul class="yiji">
+  <volist name ="p_list" id="voc">
+  
+  <if condition="($voc['category_id'] eq 95 )">
+  <li><span class="shousuo"></span><a href="{:U('Page/about', array('item' => $voc['link_label']))}">{$voc['title']}</a></li>
+  </if>
+ </volist>
+      
+     
+  </ul>
+  <h4></h4>
+  <div class="lianxi">
+地址:　北京是朝阳区<br />
+
+电话:　010-2565455<br />
+
+  
+    传真:　010-56265555<br />
+
+ 
+
+Email:　lizhong-rrr@163.com<br />
+
+
+</div>
+  
+</div>
+  <div class="right_box">
+  <div class="weizhi">当前位置
+  &gt;&gt; <a href="{:U('Page/about',array('item'=>'aboutus'))}">蓝天概况</a> &gt;&gt; <a href="{:U('Page/about',array('item'=>$contentDetail['link_label']))}">{$contentDetail.title}</a></div>
+  
+  <div class="news_box" >
+  <div class="cont_box" style="width:660px;">
+  <div class="cont">
+{$contentDetail.content}
+</div>
+<div class="cl"></div>
+</dl>
+
+
+
+  </div>
+  </div>
+
+  <div class="page"></div>
+  </div> 
+  
+  <div class="cl"></div>
+  </div>
+ 
+  </div>
+<include file="Public:footer"/>
+
+</body>
+</html>
+

@@ -1,0 +1,36 @@
+<include file="Public:header" />
+<!--单页-->
+<div class="mbox">
+<div class="left">
+
+  
+  <div id="Products">
+<h3 class="title"><neq name="Think.get.category" value="">{$Think.get.category|selectCategory}<else/>产品中心</neq> <em>Product</em></h3>
+<form action="{:U('Search/getList')}" method="get"><div class="search">内容搜索:<input name="keyword" class="input" type="text" id="keyword" size="15" /> 
+    <input name="submit" type="submit" value="提交搜索" id="submit" /><input name="module" type="hidden" value="Product" /></div></form>
+    <ul>
+    <volist name="dataContentList" id="row">
+      <li><if condition="$row['link_url'] neq ''"><a href="{$row.link_url}" target="_blank" style="{$row.title_style}"><img src="__ROOT__/Uploads/{$row.attach_thumb}" width="130" height="130" /></a><h4><a href="{$row.link_url}" target="_blank" style="{$row.title_style}">{$row.title}</a></h4><else/><a href="{:U('Product/detail',array('item'=>$row['id']))}" target="_blank" style="{$row.title_style}"><img src="__ROOT__/Uploads/{$row.attach_thumb}" width="130" height="130" /></a><h4><a href="{$row.link_url}" target="_blank" style="{$row.title_style}">{$row.title}</a></h4></if></li>
+      
+    </volist>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="pages">
+      <div class="plist">{$pageContentBar}</div>
+    </div>
+  </div>
+
+</div>
+<include file="Public:right.inc" />
+</div>
+<!--底部-->
+<include file="Public:footer" />

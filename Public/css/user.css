@@ -1,0 +1,574 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+ul {
+	line-height: 1.5em
+}
+button {
+	cursor: pointer
+}
+input{
+
+float: left;
+height: 30px;
+*line-height: 30px;
+border: 1px solid #666;
+font-size: 14px;
+border-bottom: 1px solid #DDD;
+border-right: 1px solid #DDD;
+width: 240px;
+padding-left: 10px;
+margin-bottom:8px;
+	}
+ul li {
+	font-size: 14px;
+}
+.mid {
+	margin: 0 auto;
+	width: 860px;
+}
+body {
+	background: url(../img/bg.png1);
+	height: 100%;
+}
+a {
+	text-decoration: none;
+	color: #666666
+}
+div.wp {
+	width: 980px;
+	margin: 0 auto
+}
+.left_box h3 {
+	font-size: 14px;
+	height: 28px;
+	line-height: 28px;
+	border-bottom: 1px solid #ddd;
+}
+.right_box {
+	border-right: 1px dashed #ddd;
+	width: 720px;
+	float: left;
+	min-height: 400px;
+}
+.cl {
+	clear: both;
+	height: 1px;
+	overflow: hidden;
+}
+.box {
+	display: none1
+}
+span.date {
+	font-size: 12px;
+	color: #990000;
+}
+span.more {
+	float: right;
+	padding-right: 10px;
+}
+span.more a {
+	color: #999999
+}
+span.more a:hover {
+	color: #333;
+}
+span.tishi{ color:#C00; font-size:12px; display:block; height:18px; line-height:18px; float:left;}
+.page_list {
+	font-size: 12px;
+	line-height: 22px;
+	margin-top: 30px;
+	padding-right: 30px;
+}
+.page_list a {
+	float: left;
+	display: inline;
+	font-size: 12px;
+	border: 1px solid #ddd;
+	height: 18x;
+	line-height: 18px;
+	padding: 0 4px;
+	font-size: 12px;
+	margin-right: 5px;
+}
+.page_list a:hover {
+	background: #F8F8F8
+}
+.page_list span {
+	height: 18px;
+	line-height: 18px;
+	float: left;
+	padding: 0 4px;
+	font-size: 12px;
+}
+.page_list span.tiaoshu {
+	float: right;
+}
+/*首页幻灯片*/
+.bannar {
+	width: 980px;
+	height: 300px;
+	border-top: 1px solid #f3f3f3;
+	overflow: hidden;
+	position: relative
+}
+/*底部信息*/
+ 
+ /*会员中心*/
+.home_header {
+	height: 50px;
+	background: #FFF;
+	border-bottom: 1px solid #ddd;
+	padding-top: 10px;
+ background: /-webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(#F5F5F5));
+background: /-moz-linear-gradient(top, #FFFFFF, #F5F5F5);
+	color: #666;
+	clear: both;
+}
+.home_header .logo {
+	float: left;
+	_display: inline
+}
+.u_right_box {
+	width: 620px;
+	float: left;
+	_display: inline
+}
+div.home_box {
+	margin-top: 30px;
+	min-height: 400px;
+	width: 900px;
+}
+.hziliao {
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #ddd;
+	padding-bottom: 10px;
+}
+.face {
+	width: 120px;
+	float: left;
+}
+.face img {
+	padding: 4px;
+	width: 90px;
+	height: 80px;
+	border: 1px solid #ddd;
+	background: #fff;
+}
+.hziliao .uname {
+	float: left;
+	line-height: 30px;
+/font-family:"微软雅黑";
+	font-size: 20px;
+	padding-left: 20px;
+	color: #000;
+}
+.hziliao .uname span.qm {
+	font-size: 12px;
+	color: #666;
+}
+.hziliao div.liuyan {
+	padding: 10px;
+	padding-left: 6px;
+	padding-right: 0px;
+}
+.hziliao div.liuyan button {
+	width: 80px;
+	float: right;
+	border: 1px solid #ddd;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(#F5F5F5));
+	font-size: 16px;
+	background: -moz-linear-gradient(top, #FFFFFF, #F5F5F5);
+	margin-right: 10px;
+}
+.mitght {
+	float: left;
+	width: 450px;
+	display: inline
+}
+.hziliao div.liuyan button.si {
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#FFcc00), to(#c60));
+	background: -moz-linear-gradient(top, #FFcc00, #c60) !important;
+	color: #FFF;
+	border: 1px solid #930;
+	margin-right: 0px;
+}
+.hziliao div.liuyan button.liu {
+	float: right;
+	_display: inline;
+	margin-left: 5px;
+}
+.like_box, .feedbox {
+	clear: both;
+	border: 1px dotted #CCC;
+	background: #FFF;
+	padding: 20px;
+	margin-bottom: 16px;
+}
+div.home_box h3 {
+	padding: 10px;
+	background: #f3f3f3;
+	margin-bottom: 20px;
+	font-size: 14px;
+	color: #666;
+	_border-radius: 30px;
+}
+.like_box ul {
+}
+.like_box .list_box {
+	margin: 18px auto;
+}
+.like_box ul li {
+	border-bottom: 1px dotted #ddd;
+}
+.like_box ul li a {
+	font-size: 12px;
+	line-height: 36px;
+	font-size: 14px;
+	color: #999;
+}
+.sm_face {
+	float: right;
+	_display: inline
+}
+.zhuangtai {
+	float: right;
+	_display: inline;
+	text-align: right;
+	position: relative;
+}
+.tongzhi {
+	width: 14px;
+	height: 14px;
+	background:#C00;
+	font-family: '宋体';
+	color: #FFF;
+	border-radius: 14px;
+	line-height: 18px;
+	font-size: 9px;
+	font-family:"Times New Roman", Times, serif;
+	left: 30px;
+	position: absolute;
+	text-align: center;
+	top: -7px;
+	
+	line-height: 16px;
+	text-align: center;
+}
+.s_face, .sm_face {
+	float: left;
+	display: inline;
+	margin-right: 8px;
+}
+.tong {
+	float: left;
+	line-height: 30px;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0 10px;
+	color: #999
+}
+.s_face img {
+	
+	width: 36px;
+	height: 34px;
+}
+.sm_face img {
+	width: 56px;
+	height: 50px;
+	border: 1px solid #ddd;
+}
+.s_uname {
+	float: left;
+	line-height: 36px;
+	color: #039;
+	font-size: 14px;
+}
+/*左边的盒子*/
+.u_left_box {
+	width: 260px;
+	float: right;
+	border: 1px dotted #ccc;
+	
+	background: #FFF;
+}
+.u_left_box ul {
+	margin: 14px;
+}
+.u_left_box h3 {
+	margin: 14px;
+	border: 1px dashed #ddd;
+}
+.u_left_box ul li {
+	line-height: 30px;
+	height: 30px;
+	background: #F6f6f6;
+	margin-bottom: 8px;
+	padding-left: 16px;
+}
+/*留言消息box*/
+.book_l {
+	border-bottom: 1px dotted #ccc;
+	margin: 10px;
+	
+}
+.xiaoxi_box {
+	padding: 10px;
+	float: right;
+	padding-top: 0px;
+	font-size: 14px;
+	color: #666;
+	width: 440px;
+	border: 0;
+	padding-right: 0px;
+}
+.c_uname {
+	color: #999;
+	font-size: 14px;
+	display: block;
+	text-align: right;
+	clear: both;
+}
+.c_uname a {
+	color:#09C;
+}
+.c_uname a:hover {
+	color: #06C
+}
+p.lebal_content {
+	margin: 10px 0;
+	clear: both;
+	margin-bottom: 16px;
+	height: 30px;
+}
+p.lebal_content label, p.lebal_content input, p.lebal_content textarea {
+	float: left;
+	height: 26px;
+	line-height: 26px;
+}
+p.lebal_content label {
+	width: 50px;
+	text-align: right;
+	padding-right: 10px;
+}
+p.lebal_content input {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #666;
+	font-size: 14px;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	width: 240px;
+	padding-left: 10px;
+}
+p.lebal_content select {
+	padding: 6px;
+	margin-right: 8px;
+	width: 100px;
+}
+.pf_box {
+	margin: 14px;
+}
+.pf_box .tab {
+	padding-left: 16px;
+}
+.pf_box .tab li {
+	border: 1px solid #ddd;
+	margin-right: 16px;
+	border-bottom: 0px;
+	float: left;
+	width: 140px;
+	text-align: center;
+	line-height: 40px;
+	height: 40px;
+	color: #666
+}
+.cl_line {
+	border-bottom: 1px solid #ddd;
+	height: 1px;
+	clear: both;
+	margin-top: -2px;
+}
+.pf_box .tab li.hover {
+	border-bottom: 1px solid #FFF;
+	margin-bottom: -2px;
+}
+.pf_content {
+	margin: 14px;
+}
+/*账户菜单*/
+ul#set {
+	position: absolute;
+	border: 1px solid #ddd;
+	border-top: 0px;
+	top: 50px;
+	background: #fff;
+	width: 99%;
+}
+ul#set li {
+	height: 36px;
+	line-height: 36px;
+	padding-bottom: 10px;
+}
+ul#set li a {
+	background: #FFF;
+	display: block;
+	border-bottom: 1px dashed #ddd;
+	text-align: center;
+}
+#footer {
+	clear: both;
+	border-top: 1px solid #ddd;
+	width: 980px;
+	margin: 0 auto;
+	margin-top: 18px;
+	font-size: 14px;
+	line-height: 36px;
+	color: #666;
+//background:#000;
+}
+.layout {
+	padding-top: 10px;
+}
+.ab_text {
+	border: 2px solid #ddd;
+	height: 90px !important;
+	width: 400px;
+	padding-left: 10px;
+}
+.save {
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#FFF), to(#EDEDED));
+	background: -moz-linear-gradient(top, #FFF, #EDEDED) !important;
+	color: #FFF;
+	border: 1px solid #DDD;
+	margin-right: 0px;
+	line-height: 40px;
+	font-size: 14px;
+	padding: 0 15px;
+	color: #333
+}
+.repass label {
+	width: 120px!important;
+}
+.repass label.err {
+	width: 120px !important;
+	color: #F00;
+	text-align: left;
+	padding-left: 15px;
+}
+.repass input {
+	width: 190px !important;
+}
+/*留言回复表单*/
+.huifu_box {
+	clear: both;
+	padding: 10px;
+	border: 1px solid #ddd;
+	margin-top: 20px;
+	text-align: left;display:none;
+}
+.huifu_box textarea {
+	width: 494px;
+	height: 70px;
+	padding:10px;
+	margin-bottom:10px;
+}
+.huifu_box button {
+	
+	height: 26px;
+	padding: 0 8px;
+	width: 80px;
+	color:#FFF;
+	border:1px solid #ddd;
+	line-height: 24px;
+	border-radius:3px; background:#333;
+	color:#CCC;
+	
+	float:right;
+	
+}
+.tjdiv{ padding-left:400px;}
+.zishu{ font-family:Georgia, "Times New Roman", Times, serif; padding:5px; padding-top:20px; color:#333}
+.close{ padding-bottom:8px;}
+.close span.guanbi{ margin-left:490px; display:block; border:1px  dashed #ddd; padding:3px; font-size:10px; width:18px; text-align:center; cursor:pointer}
+.liu_f{ padding:10px;}
+/*首页用户列表*/
+
+ul.nuser{ margin-left:8px;}
+ul.nuser li{border:2px solid #ccc; width:48px; height:44px; padding:0; float:left; _display:inline; margin-left:7px;}
+ul.nuser li img{width:48px; height:44px;}
+ul.nuser li a:hover{}
+
+.page_list {
+	font-size: 12px;
+	line-height: 22px;
+	margin-top: 30px;
+	padding-right: 30px;
+}
+.page_list a {
+	float: left;
+	display: inline;
+	font-size: 12px;
+	border: 1px solid #ddd;
+	height: 18x;
+	line-height: 18px;
+	padding: 0 4px;
+	font-size: 12px;
+	margin-right: 5px;
+}
+.page_list a:hover {
+	background: #F8F8F8
+}
+.page_list span {
+	height: 18px;
+	line-height: 18px;
+	float: left;
+	padding: 0 4px;
+	font-size: 12px;
+}
+.page_list span {
+	float: left;
+}
+.hflist_box{ padding:10px; border:1px solid #ddd;  border-top:0px; display:none}
+.hflist_box .sm_face{ float:left; width:30px; height:30px;} 
+.hflist_box .sm_face img{ width:38px; height:35px;}
+.hflist_box  .xiaoxi_box{ font-size:12px; float:left; text-align:left;}
+.book_item{ background:#F8F8F8; margin-bottom:8px; padding:8px; line-height:20px;}
+.book_item{ font-size:12px !important; color:#666;}
+input.hf_bt{ clear:both!important; display:block; width:98%; border:1px  solid #ddd; margin-top:10px; line-height:24px; color:#ccc; border-top:1px solid #999}
+
+/*这里是私信的连接*/
+.list_box ul li a{ color:#06C !important;}
+.ftitle{ float:left; font-size:14px; color:#666;}
+.txtbox{ width:500px !important;}
+#hfname{ padding:8px 0 !important; font-size:14px; display:none}
+#hfname span.modfy{ float:left; display:block; background:#f3f3f3; font-size:14px; padding:0px; color:#999; cursor:pointer}
+#hfname span.text{ float:left;}
+.pfile_box{ font-size:14px; color:#666; line-height:28px; padding:15px;}
+/*ajax用户*/
+.ajax_user{ position:relative;}
+#uli{ position:absolute; top:31px; left:0px; width:auto; border:1px solid #ccc; background:#FFF; display:none}
+.ajax_list{}
+.ajax_list .ubox{ width:240px !important;}
+.ajax_list .ubox div{ background:none}
+.ajax_list .ubox .uface{ float:left; margin-right:10px;}
+.ajax_list .ubox .uface img{ padding:3px; background:#CCC;}
+.ajax_list .ubox .ucont{ line-height:18px; color:#999;}
+.ajax_list .ubox .ucont span{ color:#333; font-size:12px;}
+.ajax_list .ubox { padding:5px; padding-bottom:2px; font-size:12px!important; clear:both; border-bottom:1px solid #ededed; }
+.ajax_list a:hover{ background:#f6f6f6;}
+.ajax_list a{ display:block;}
+/*上传头像css*/
+
+.upface{ }
+.upface .sface{ position:relative; width:90px; overflow:hidden;padding:0px; border:1px solid #eee; height:80px; float:left;}
+.upface .sface #sbt{ line-height:24px; height:24px; font-size:12px; position:absolute; background:#000; text-align:center; cursor:pointer; color:#fff; top:56px; width:90px; left:0; opacity:0.5;filter:alpha(opacity=50);*top:200px;}
+.upface .sface{ }
+.upform{ float:left;}
+#msg{ padding:5px; font-size:12px;}

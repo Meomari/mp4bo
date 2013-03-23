@@ -1,0 +1,56 @@
+<include file="Public:header" />
+
+
+  </div>
+  <div class="wp"><div class="bannar_1">
+    <img src="__PUBLIC__/img/banr1.png"/></div>
+  <div class="left_box">
+  <h3>产品与服务</h3>
+  <ul class="yiji">
+  <volist name="catelist" id="voc">
+  
+  
+  <li>{$voc.str_repeat}<a href="{$voc['url']}">{$voc['title']}</a></li>
+
+    </volist>
+  </ul>
+  </div>
+  <div class="right_box">
+  <div class="weizhi">当前位置  
+  &gt;&gt; <a href="{:U('Product/index')}">产品与服务</a><if condition="($pname['pname'] neq '') OR ($name gt 100) ">  &gt;&gt; <a href="{:U('Product/plist',array('category'=>$pid))}">{$pname['pname']}</a> </if>  &gt;&gt;  <a href="{:U('Product/plist',array('category'=>$catid))}">{$catename}</a> </div>
+ 
+  <div class="product_box">
+   <div class="ptitle"><a href="{:U('Product/plist',array('category'=>$category))}" class='more'><img src="/Public/img/more.gif" width="60" height="18" /></a>
+<h3>产品中心</h3> 
+  </div>
+  <div class="prod_list">
+ <ul>
+ 
+  <volist name="dataContentList" id="row">
+ <li>
+ <div class="p_img">
+ <a href="{:U('Product/detail',array('item'=>$row['id']))}"><img src="__ROOT__/Uploads/{$row.attach_thumb}" width="160" height="120" /></a>
+ <div class="title"><a href="{:U('Product/detail',array('item'=>$row['id']))}">{$row['title']}</a></div>
+ </div>
+ </li>
+ 
+ </volist>
+ 
+ 
+ 
+
+ </ul>
+ <div class="cl"></div>
+ <div class="pages">
+      <div class="page_list"> {$pageContentBar} </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+ 
+<include file="Public:footer"/>
+</div>
+</body>
+</html>
+

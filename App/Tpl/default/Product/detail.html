@@ -1,0 +1,39 @@
+<include file="Public:header" />
+<script>
+$(document).ready(function(e) {
+$('#did').load('/index.php?a=did&m=Article&item={$contentDetail["id"]}');
+});
+</script>
+<div class="wp">
+<div class="bannar1"><img src="/Public/img/bannar1.jpg" width="980" height="148" /></div>
+<div class="weizhi"><a href="/">首页</a> > <a href="{$murl}">产品中心</a> {~get_parent_cat($catelist,$contentDetail['category_id'],$jingtai,$moduleName)}  </div>
+  <div class="left_list">
+  <h3>产品与服务</h3>
+  <ul class="yiji">
+  <volist name="pp_c" id="voc">
+  
+  
+  <li class="level_{$voc['level']} child_{$voc['parent_id']}"><a href="{:U('Product/plist', array('category' => $voc['id']))}">{$voc['title']}</a></li>
+
+    </volist>
+  </ul>
+  </div>
+  <div class="right_box">
+    <div class="product_box">
+    <div class="prod_list">
+  <div class="cont_box">
+<h3>{$contentDetail.title}</h3>
+<div class="propic"><img src="__ROOT__/Uploads/{$contentDetail.attach_image}" />
+{$contentDetail.content}
+</div>
+ <div class="cl"></div>
+</div>
+  </div>
+   <div class="cl"></div>
+  </div>
+    <div class="cl"></div>
+  </div>
+ 
+<include file="Public:footer"/>
+
+

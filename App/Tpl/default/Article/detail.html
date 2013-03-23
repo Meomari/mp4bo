@@ -1,0 +1,55 @@
+
+<include file="Public:header" />
+<!--单页-->
+<div class="wp">
+<div class="bannar1"><img src="/Public/img/bannar1.jpg" width="980" height="148" /></div>
+  <div class="left_box">
+  <h3>新闻中心</h3>
+  <ul class="yiji">
+  <volist name ="catelist" id="voc">
+  <li><a href="{:U('Article/index', array('category' =>$voc['id']))}">{$voc['title']}</a></li>
+ </volist>
+      
+     
+  </ul>
+  
+   
+  </div>
+  <div class="right_box">
+  <div class="weizhi">当前位置
+  &gt;&gt; <a href="{$murl}">新闻中心</a> {~get_parent_cat($catelist,$contentDetail['category_id'],$jingtai,$moduleName)} </div>
+  
+  <div class="news_box">
+  <div class="content_box">
+   <h1 class="title">{$contentDetail.title}</h1>
+   <div class="laiyuan">
+   内容来源：{$contentDetail.copy_from|default='本站'} 发布时间：<span class="date">[{$contentDetail.create_time|date="Y-m-d",###}]</span>　查看次数：<span class="dianji">{$contentDetail.view_count}</span>
+   </div>
+   
+   <if condition="$contentDetail['description'] neq ''">
+   <div class="zhaiyao">
+   {$contentDetail.description}
+   </div>
+   </if>
+   <div class="cont_box">
+   
+   {$contentDetail.content}
+   </div>
+  
+<div class="cl"></div> 
+
+<div class="shangxia">
+   上一篇：{$shang_link}<br />
+   下一篇：{$xia_link}
+   </div>
+
+
+
+  </div>
+  
+  <div class="page"></div>
+  </div>
+  </div>
+  </div>
+<include file="Public:footer"/>
+

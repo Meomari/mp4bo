@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Home page</title>
+
+<link  type="text/css"  rel="stylesheet" href="__PUBLIC__/css/css.css"/>
+<include file="Public:header" />
+<!--单页-->
+</div>
+
+  </div>
+ <div class="bannar">
+    <img src="Public/img/b1.jpg" width="980" height="298" alt="b1" /></div> 
+    <div class="main">
+  <div class="left_list">
+  <h3>产品与服务</h3>
+  <ul class="yiji">
+  <volist name="pp_c" id="voc">
+  
+  
+  <li class="level_{$voc['level']} child_{$voc['parent_id']}"><a href="{:U('Product/plist', array('category' => $voc['id']))}">{$voc['title']}</a></li>
+
+    </volist>
+  </ul>
+  </div>
+  <div class="right_box">
+  <div class="weizhi">当前位置  
+  &gt;&gt; <a href="{:U('Product/index')}">产品与服务</a><if condition="($pname['pname'] neq '') OR ($name gt 100) ">  &gt;&gt; <a href="{:U('Product/plist',array('category'=>$pid))}">{$pname['pname']}</a> </if>  &gt;&gt;  <a href="{:U('Product/plist',array('category'=>$catid))}">{$catename}</a> </div>
+ 
+  <div class="product_box">
+    <div class="prod_list">
+  <div class="cont_box">
+<h3>{$contentDetail.title}</h3>
+<div class="propic"><img src="__ROOT__/Uploads/{$contentDetail.attach_image}" />
+{$contentDetail.content}
+</div>
+ <div class="cl"></div>
+</div>
+  </div>
+   <div class="cl"></div>
+  </div>
+    <div class="cl"></div>
+  </div>
+ 
+<include file="Public:footer"/>
+</div>
+</body>
+</html>
+

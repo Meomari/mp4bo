@@ -1,0 +1,118 @@
+<div class="pinglun">
+      <h4 align="left">我说两句</h4>
+      <form action="" method="" name="fr" id="fr">
+        <textarea name="content" id="content" class="ping_text"></textarea>
+        <input id="module" name="module" type="hidden" value="<?php echo $_GET['mod']; ?>" />
+        <input id="tid" name="tid" type="hidden" value="<?php echo $_GET['item'];?>" />
+        <div align="right">
+          <input type="button" class="p_bt" name="bt" id="commentSubmit" value="说完了" />
+        </div>
+      </form>
+    </div>
+<div class="ping_list">
+
+
+      <h4 align="left">下面是评论</h4>
+      
+      <volist name="dataContentList" id="row">
+      <div class="p_l">
+        <div class="face"> <a href="/User/home/{$row['uid']}"> <img src="{$row['face']}" height="60" width="62" /><br />
+          </a></div>
+        <div class="p_content" align="left">
+          <div class="p_uname"><span class="ming"><a href="/User/home/{$row['uid']}">{$row['username']}</a></span> <span class="p_date">{$row.create_time|date="y-m-d H:i:s",###}</span></div>
+          <p> {$row.content|nl2br}</p>
+        </div>
+        <div class="cl"></div>
+      </div>
+      
+      
+      
+       </volist>
+
+    </div>
+    
+     <div class="page_num">
+    {$pageContentBar}
+    </div>
+    
+    
+    
+    <script type="text/javascript" >
+
+$(function(){   
+
+    $("#commentSubmit").click(function(){
+
+       $.ajax({   
+
+		  type:"POST",   
+
+			  url:"{:U('Comment/doInsert')}",
+
+			  data:{
+
+				   content: $('#content').val(), module: $('#module').val(), tid: $('#tid').val()
+
+				  },   
+
+			  beforeSend:function(){
+
+				  
+
+				  },                
+
+			  success:function(data){
+
+				switch(data)
+
+				{
+
+					case 'errorVerifyCode':
+
+						//$("#verifyImage").attr('src', "{:U('Public/verify',0,0,0)}?"+ Math.random());
+
+					
+
+					case 'success':
+
+					 $("#pl_box").load('{:U("Comment/getList",array("item"=>$_GET["item"],"mod"=>$_GET["mod"]))}');
+
+						return true;
+
+						break
+
+					default:
+
+						$("#msg").html('<span style="color:#FF0000">'+data+'</span>');
+
+						alert ('未知错误，请联系管理员');
+
+				}
+
+				return false;			
+
+			}               
+
+         });   
+
+		return false;
+
+    });  
+	
+	 $(document).keydown(function(e) {
+
+        if (e.ctrlKey && e.which == 13) {
+            $('.p_bt').click();
+
+
+        }
+	
+	 });
+
+}); 
+
+
+
+
+</script>
+

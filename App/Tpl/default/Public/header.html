@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>
+
+<if condition="$detail.title neq ''">{$detail.title}<else/>
+
+<if condition="$moduleTitle neq ''">{$moduleTitle}-</if><if condition ="$Think.get.category neq ''">{$Think.get.category|selectCategory}-</if>{$sysConfig.site_name}</if>
+
+</title>
+<meta name="keywords" content="{$detail.keyword}"/>
+<script type="text/javascript" src="/Public/Js/jquery.js"></script>
+<link href="/Public/css/index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="header">
+  <div class="h_center">  <div class="logo">TEST</div>
+  <div id="nav">
+    <div class="n_center">
+  
+      <ul class="menu">
+        <li><a href="/">首页</a></li>
+       <volist name="globalMenu" id="vo" order="display_order asc">
+     
+     <li><a href="{$vo['link_url']}" target="{$vo['target']}">{$vo['title']}</a></li>
+    
+</volist>
+      
+      </ul>
+      <div class="search"><form action="aa.php" method="post" name="fr" id="fr">
+                           <input class="select" name="select" id="select" value="视频" /><div class="sbr"></div> <input type="text" class="key" name="keyweord" id="k" value="输入关键字搜索吧" onclick="this.value=''" />
+                              <input type="submit" class="sbt" name="sbt" id="sbt" value="　" />
+                            </form></div> 
+                            
+          <div class="l_right">
+      <div class="login"><if condition="$jingtai neq 1">
+<if condition=" $userid eq '' ">
+<a href="{$loginUrl}">登陆</a> 
+|  <a href="{:U('User/reg')}">注册</a><else/>
+
+<a href="{:U('User/index')}">{$username}</a> <a href="{:U('User/logout')}">退出登陆</a>
+</if>
+<else/>
+<script src="/index.php?s=Index&a=htmllogin&jump=<?php echo safe_b64encode($_SERVER['REQUEST_URI']) ?>"></script>
+</if>　</div>
+    </div>                  
+ 
+    </div>
+   
+  </div>
+   </div>
+</div>
+<!--header end-->

@@ -1,0 +1,152 @@
+
+<include file="Public:header"/>
+<script>
+//获取评论
+    $(document).ready(function(){
+	
+	   $("#pl_box").load('{:U("Comment/getList",array("item"=>$detail["id"],"mod"=>$moduleName))}');
+	   
+	   
+	   
+	   
+	   
+	   //顶踩
+
+	   $("#dingcai a").click(function(){
+		    
+			$this=$(this);
+			 $.ajax({  
+			  
+
+		  type:"GET",   
+
+			  url:'{:U("$moduleName/dingcai")}',
+
+			  data:{
+
+				   dingcai: $this.attr("class"),id:'{$detail["id"]}'
+
+				  },   
+
+			  beforeSend:function(){
+
+               },                
+
+			  success:function(data){
+				  
+				if(data!=0){
+					 
+					$this.next().text(data);
+					 
+					}else{
+						 
+						alert('您已经投票了');
+						 
+						}
+				  
+			  }
+			
+			  });
+			  
+		   
+		   })
+	  
+	});
+</script>
+<!--warrper  start-->
+<div class="warrper">
+  <div class="location"> 播客 >{$detail.title}面</div>
+  <!--left  start-->
+  <div class="v_left">
+    <div class="left_box1 play_box">
+    
+    
+ 
+   
+      
+    </div>
+    <div class="dingcai" style="background:#FFF !important">
+      <div class="d_left"><span id="dingcai"> <a href="javascript:void(0)" class="ding">赞</a><span class="d_num" id="ding">{$detail['ding']}</span><a href="javascript:void(0)" class="cai">贬</a><span class="c_num" id="cai" style="color:#CCC">{$detail['cai']}</span></span> <span class="shoucang"></span><span class="shar"><!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+<span class="bds_more">分享到：</span>
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=600105" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END --></span> </div>
+      <div class="d_right"> <span class="b_did">观看：<b class="did">{$detail['view_count']}</b></span> </div>
+      <div class="cl"></div>
+    </div>
+    <div class="jianjie" style="display:none"> <span class="date">发布时间：2012-02-12</span> 来源:<span class="date">发布人：管理员</span>
+      <p> 这段视频是咋回事其实我也不知道但是我知道我现在心里这段视频是咋回事其实我也不知道但是我知道我现　</p>
+      <div style="height:30px; background:#F6F6F6; margin-top:10px; text-align:center; border-bottom:1px solid #EEE; color:#999">展开全部&gt;&gt;</div>
+    </div>
+    
+   <div id="pl_box"></div>
+  </div>
+  
+  <!--left end--> 
+  
+  <!--left end--> 
+  <!--w_right start-->
+  <div class="w_right v_right">
+  
+  <div class="r_box">
+      <h3><span class="more"></span>视频介绍</h3>
+      <div style="padding:18px;">
+        {$detail['content']}
+      </div>
+    </div>
+  
+    <div class="tui_v r_box">
+      <h3><span class="more"><a href="#">[更多]</a></span>推荐视频</h3>
+      <div class="tui_list">
+        <ul>
+         
+          
+        </ul>
+      </div>
+    </div>
+    <div class="xiangguan r_box" style="display:none">
+      <h3 align="left">想关视频</h3>
+      <ul>
+        <li> <a href="#" class="img"> <img src="/Public/img/vo1.gif" width="130" height="80"/> </a>
+          <p class="title"> <a href="#">老梁说天下郭美美这这是老梁</a> 整理：<a href="#">管理员</a><br />
+            观看：<span class="num">24000</span> </p>
+        </li>
+        <li> <a href="#" class="img"> <img src="/Public/img/vo1.gif" width="130" height="80"/> </a>
+          <p class="title"> <a href="#">老梁说天下郭美美这这是老梁</a> 整理：<a href="#">管理员</a><br />
+            观看：<span class="num">24000</span> </p>
+        </li>
+        <li> <a href="#" class="img"> <img src="/Public/img/vo1.gif" width="130" height="80"/> </a>
+          <p class="title"> <a href="#">老梁说天下郭美美这这是老梁</a> 整理：<a href="#">管理员</a><br />
+            观看：<span class="num">24000</span> </p>
+        </li>
+        <li> <a href="#" class="img"> <img src="/Public/img/vo1.gif" width="130" height="80"/> </a>
+          <p class="title"> <a href="#">老梁说天下郭美美这这是老梁</a> 整理：<a href="#">管理员</a><br />
+            观看：<span class="num">24000</span> </p>
+        </li>
+        <li> <a href="#" class="img"> <img src="/Public/img/vo1.gif" width="130" height="80"/> </a>
+          <p class="title"> <a href="#">老梁说天下郭美美这这是老梁</a> 整理：<a href="#">管理员</a><br />
+            观看：<span class="num">24000</span> </p>
+        </li>
+      </ul>
+      <div class="cl"></div>
+    </div>
+    <!--播放排行---></div>
+  
+  <!--w_right end-->
+<div class="cl"></div>
+<!--footer--->
+
+
+</body>
+</html>

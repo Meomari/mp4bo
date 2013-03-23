@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>{$moduleTitle}</title>
+<link  type="text/css"  rel="stylesheet" href="__PUBLIC__/css/css.css"/>
+<include file="Public:header" />
+<!--单页-->
+<div class="main"><div class="bannar_1">
+    <img src="__PUBLIC__/img/banr1.png"/></div>
+  <div class="left_list">
+  <h3>服务项目</h3>
+  <ul class="yiji">
+  <volist name ="p_list" id="voc">
+  
+  <if condition="($voc['category_id'] eq 94 )">
+  <li><span class="shousuo"></span><a href="{:U('Page/index', array('item' => $voc['link_label']))}">{$voc['title']}</a></li>
+  </if>
+ </volist>
+      
+     
+  </ul>
+  
+</div>
+  <div class="right_box">
+  <div class="weizhi">当前位置
+  &gt;&gt; 关于我们 &gt;&gt; </div>
+  
+  <div class="news_box">
+  <div class="cont_box">
+  <h3>{$contentDetail.title}</h3>
+{$contentDetail.content}
+<div class="cl"></div>
+</dl>
+
+
+
+  </div>
+  </div>
+  <div class="pages">
+      <div class="page_list"> {$pageContentBar} </div>
+    </div>
+  <div class="page"></div>
+  </div>
+  </div>
+<include file="Public:footer"/>
+</div>
+</body>
+</html>
+

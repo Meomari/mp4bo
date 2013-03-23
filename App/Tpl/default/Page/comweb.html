@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>{$moduleTitle}</title>
+<link  type="text/css"  rel="stylesheet" href="__PUBLIC__/css/info.css"/>
+<include file="Public:header" />
+<!--单页-->
+<div class="main"><div class="bannar_1">
+    <img src="__PUBLIC__/img/banr1.png"/></div>
+  <div class="left_list">
+  <h3>服务项目</h3>
+  <ul class="yiji">
+  <volist name ="p_list" id="voc">
+  
+  <if condition="($voc['category_id'] eq 94 )">
+  
+  
+ 
+  <li><span class="shousuo"></span><a href="{:U('Page/index', array('item' => $voc['link_label']))}">{$voc['title']}</a></li>
+ 
+  </if>
+ </volist>
+      
+     
+  </ul>
+  
+</div>
+  <div class="right_box">
+  <div class="weizhi">当前位置
+  &gt;&gt; 服务中心 &gt;&gt; 网站建设</div>
+  
+  <div class="product_box">　随着互联网的普及与发展，网站已逐渐成为企业对外展示、信息沟通最方便快捷的媒介。然而，什么样的网站才能满足您的企业形象、业务需求？什么样的网站才是量体裁衣、恰到好处？中瑞安信科技有能力有信心为您量身订制个性化互联网应用客户中心。
+</div>
+<div class="liucheng" align="center">
+  <img src="img/web_liucheng.png" width="718" height="100" /></div>
+  
+  <div style="width:732px; height:240px; background:url(img/webbj.png) no-repeat; margin-top:40px; border:1px solid #ddd; margin-bottom:20px; margin:30 auto; margin-top:30px;">
+  
+  
+  
+  <div class="jianjie">
+  <p>自助型建站产品，近千套成品网站任您挑选，功能强大，网站即买即通，建网站像泡杯茶一样简单。<br />
+<a href="#">查看更多</a>
+</p>
+  
+  
+  </div>
+  
+   <div class="jianjie">
+  <p>自助型建站产品，近千套成品网站任您挑选，功能强大，网站即买即通，建网站像泡杯茶一样简单。<br />
+<a href="#">查看更多</a>
+</p>
+  
+  
+  </div>
+  
+   <div class="jianjie">
+  <p>自助型建站产品，近千套成品网站任您挑选，功能强大，网站即买即通，建网站像泡杯茶一样简单。
+  <br />
+<a href="#">查看更多</a>
+</p>
+  
+  
+  </div>
+  
+  
+  
+  </div>
+  <div class="web_case" style="padding:0px;">
+  <h3><span class="tt">成功案例</span></h3>
+  <div class="web_list">
+  <ul class="cases">
+
+            <li><a href="#" class="img"><img src="http://www.sino-web.com/templets/default/skins/images/WebsiteC01.gif" /></a><a href="#">www.zrax.com</a></li>
+            <li><a href="#" class="img"><img src="http://www.sino-web.com/templets/default/skins/images/WebsiteC02.gif" /></a><a href="#">www.zrax.com</a></li>
+            <li><a href="#" class="img"><img src="http://www.sino-web.com/templets/default/skins/images/WebsiteC03.gif" /></a><a href="#">www.zrax.com</a></li>
+            <li><a href="#" class="img"><img src="http://www.sino-web.com/templets/default/skins/images/WebsiteC04.gif" /></a><a href="#">www.zrax.com</a></li>
+            <li><a href="#" class="img"><img src="http://www.sino-web.com/templets/default/skins/images/WebsiteC05.gif" /></a><a href="#">www.zrax.com</a></li>
+            <li><a href="#" class="img"><img src="http://www.sino-web.com/templets/default/skins/images/WebsiteC06.gif" /></a><a href="#">www.zrax.com</a></li>
+
+            <li><a href="#" class="img"><img src="http://www.sino-web.com/templets/default/skins/images/WebsiteC07.gif" /></a><a href="#">www.zrax.com</a></li>
+            <li><a href="#" class="img"><img src="http://www.sino-web.com/templets/default/skins/images/WebsiteC08.gif" /></a><a href="#">www.zrax.com</a></li>
+            <li><a href="#" class="img"><img src="http://www.sino-web.com/templets/default/skins/images/WebsiteC09.gif" /></a><a href="#">www.zrax.com</a></li>
+            <li><a href="#" class="img"><img src="http://www.sino-web.com/templets/default/skins/images/WebsiteC10.gif" /></a><a href="#">www.zrax.com</a></li>
+            <li><a href="#" class="img"><img src="http://www.sino-web.com/templets/default/skins/images/WebsiteC11.gif" /></a><a href="#">www.zrax.com</a></li>
+            <li><a href="#" class="img"><img src="http://www.sino-web.com/templets/default/skins/images/WebsiteC12.gif" /></a><a href="#">www.zrax.com</a></li>
+
+          </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+ <include file="Public:footer"/>
+</div>
+</body>
+</html>
