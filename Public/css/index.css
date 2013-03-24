@@ -1,7 +1,7 @@
 /*slider*/
-#slider{background-color:#111; padding-top:8px; width:970px; margin:0 auto }
+#slider{background-color:#111; width:100%; margin:0 auto }
 .slider_box{width:966px; margin:0 auto;height: 338px;}
-.silder_tip{width: 92px;height: 92px;overflow: hidden;position: absolute;top: 0;right: 0;z-index:1000; text-indent:-999px;background:url(../img/tip-tt.gif) no-repeat; }
+.silder_tip{width: 92px;height: 92px;overflow: hidden;position: absolute;top: 0;right: 0;z-index:990; text-indent:-999px;background:url(../img/tip-tt.gif) no-repeat; }
 #movie_tip{background-position: -93px 0;}
 .silder_con{height:270px;overflow: hidden;position: absolute;}
 .silder_panel{width:970px;height:270px;overflow: hidden; position:absolute;background: #111;}
@@ -28,12 +28,13 @@
 
 /*bnr*/
 .bnr{  margin-top:-4px; clear:both;}
-.hot{ width:968px; height:560px; background:#FFF}
-.hot ul.mv-list li { margin-left:19px}
+.hot{ .height:560px;}
+
+ul.mv-list li { margin-left:12px}
 .solid{ border-bottom:1px solid #ddd; height:12px;}
-.mv-box{ width:730px; height:560px;}
-.rt-box{ width:237px; margin-left:-1px; height:560px; border-left:1px solid #FFF}
-.rt-box .bt-title{ font-size:12px;  height:14px}
+.mv-box{ width:660px; height:560px;}
+.rt-box{ width:280px; margin-left:-1px; height:560px; background:#FFF; padding-left:10px;}
+.rt-box .bt-title{ font-size:12px;  height:14px; padding-right:10px;}
 
 
 
