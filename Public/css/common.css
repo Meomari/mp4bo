@@ -1,5 +1,5 @@
 body,div,hr,blockquote,ul,ol,li,table,th,td,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,input,button,select,textarea,fieldset,legend{margin:0;padding:0}
-body{font-size:12px;color:#333; background:#f8f8f8;font-family:Tahoma,Geneva,sans-serif,'宋体'; }
+body{font-size:12px;color:#333; .background:#f8f8f8;font-family:Tahoma,Geneva,sans-serif,'宋体'; }
 h1,h2,h3,h4,h5,h6{ padding:0px; margin:0px;}
 .clearfix{*zoom:1}
 .clearfix:after{display:block;clear:both;content:".";visibility:hidden;height:0}
@@ -33,7 +33,7 @@ a:hover{color:#c00; text-decoration:underline;}
 .m16{ margin:8px 16px;}
 .p10{ padding:10px;}
 .ptop{ padding-top:8px;}
-.box{ .background:#FFF; margin-top:18px;}
+.box{ .background:#FFF; margin-top:12px; }
 .h3{ font-family:'微软雅黑'; font-size:18px; color:#333; display:block; }
 .h4{ font-family:'宋体'; font-size:14px; color:#333; display:block; font-weight:bold}
 .bt-title{ height:24px; padding:5px 0px; padding-right:12px;}
@@ -63,7 +63,7 @@ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, 
 
 
  ul.mv-list{ margin-left:-12px;}
- ul.mv-list li{ width:154px; height:216px; margin-left:0px; margin-top:10px;}
+ ul.mv-list li{ width:154px; height:230px; margin-left:0px; margin-top:10px;}
  ul.mv-list li .m-tu{ position:relative;}
  ul.mv-list li .m-tu img{ background:#FFF; .padding:5px; .border:1px solid #ededed; height:192px; width:154px;}
 
@@ -80,13 +80,13 @@ ul.mv-list li .m-tu a:hover img{alpha(opacity=70);
 	
 	
 .hot ul.mv-list li .m-tu a.cat-a:hover{ text-decoration:none; background:#FFF; color:#000}
- ul.mv-list li .mv-title{ line-height:26px; text-align:center}
+ ul.mv-list li .mv-title{ line-height:40px; text-align:left}
  ul.mv-list li .mv-title a{ color:#666}
  ul.mv-list li .mv-title span.tag a{ color:#999}
 /*tab选项卡*/
 
 .tab-box{}
-.tab{ border-bottom:1px solid #ddd; height:25px; padding-top:8px;}
+.tab{ border-bottom:1px solid #ddd; background:#FFF; height:25px; padding-top:8px;}
 
 .tab span.tab-bar{ border:1px solid #ddd; border-bottom:0px; nav-left:10px; display:block; padding:5px 10px; float:left; margin-bottom:0px; margin-left:10px; background:#FFF}
 .tab span.hover{ border-bottom:1px solid #FFF; border-top:2px solid #ccc; padding-top:4px;}
