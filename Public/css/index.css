@@ -29,12 +29,12 @@
 /*bnr*/
 .bnr{  margin-top:-4px; clear:both;}
 .hot{ .height:560px; border-bottom:1px dashed #ddd; padding-bottom:22px;}
-
-ul.mv-list li { margin-left:12px}
+.left-m{ width:270px; min-height:300px; float:left; }
+ul.mv-list li { margin-left:28px}
 .solid{ border-bottom:1px solid #ddd; height:12px;}
-.mv-box{ width:660px; border-bottom:1px dotted #ddd; padding-bottom:16px;}
-.rt-box{ width:280px; margin-left:-1px; padding-left:18px;  border-left:1px  dashed #ddd;}
-.rt-box .bt-title{ font-size:12px;  height:14px; padding-right:10px;}
+.mv-box{ width:750px; border-bottom:1px dotted #ddd; padding-bottom:16px;}
+.rt-box{ width:230px; margin-left:-1px; padding-left:0px;  border-left:0px  dashed #ddd;}
+.rt-box .bt-title{ font-size:12px;  height:14px; padding-right:10px; padding-left:18px;}
 
 
 
@@ -109,7 +109,7 @@ div.slidebox {
 
 /*评分*/
 ol.pai-list{}
-ol.pai-list li { line-height:30px; .border-bottom:1px dotted #ededed; height:30px;}
+ol.pai-list li { line-height:30px; .border-bottom:1px dotted #ededed; height:30px; clear:both;}
 
 ol.pai-list li span{display:block;}
 ol.pai-list li span.num{ background:#f1f1f1; color:#999; border-radius:0px; box-shadow: 1px 1px 1px #ddd;  margin:2px; margin-top:8px; margin-right:18px; line-height:12px; font-size:10px;  padding:2px; text-align:center}
