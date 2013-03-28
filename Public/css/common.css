@@ -1,5 +1,5 @@
 body,div,hr,blockquote,ul,ol,li,table,th,td,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,input,button,select,textarea,fieldset,legend{margin:0;padding:0}
-body{font-size:12px;color:#333; .background:#f8f8f8;font-family:Tahoma,Geneva,sans-serif,'宋体'; }
+body{font-size:12px;color:#333; background:#f8f8f8;font-family:Tahoma,Geneva,sans-serif,'宋体'; }
 h1,h2,h3,h4,h5,h6{ padding:0px; margin:0px;}
 .clearfix{*zoom:1}
 .clearfix:after{display:block;clear:both;content:".";visibility:hidden;height:0}
@@ -28,12 +28,13 @@ a:hover{color:#c00; text-decoration:underline;}
 .rt{ float:right; display:block; _display:inline;}
 .ddd{ border: 1px solid #eee; border-top:1px solid #ddd}
 .ccc{ border:1px solid #ccc}
-.mtop{ margin-top:10px;}
+.mtop10{ margin-top:10px;}
+.mtop20{ margin-top:20px;}
 .m10{ margin:10px;}
 .m16{ margin:8px 16px;}
 .p10{ padding:10px;}
 .ptop{ padding-top:8px;}
-.box{ background:#FFF; margin-top:12px; padding-top:18px;}
+.box{ .background:#FFF; margin-top:0px; padding-top:18px;}
 .h3{ font-family:'微软雅黑'; font-size:18px; color:#333; display:block; }
 .h4{ font-family:'宋体'; font-size:14px; color:#333; display:block; font-weight:bold}
 .bt-title{ height:24px; padding:5px 0px; padding-right:12px; padding-top:0px; margin-top:-4px;}
@@ -63,7 +64,7 @@ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, 
 
 
  ul.mv-list{ margin-left:-29px;}
- ul.mv-mid{ width:510px; float:right; margin-left:-40px;}
+ ul.mv-mid{ .width:510px; float:right; margin-left:-28px;}
  ul.mv-list li{ width:141px; height:210px; margin-left:0px; margin-top:4px; padding-bottom:14px;}
  ul.mv-list li .m-tu{ position:relative;}
  ul.mv-list li .m-tu img{ background:#FFF; .padding:5px; .border:1px solid #ededed; height:182px; width:141px;}
@@ -87,10 +88,10 @@ ul.mv-list li .m-tu a:hover img{alpha(opacity=70);
 /*tab选项卡*/
 
 .tab-box{}
-.tab{ border-bottom:1px solid #ddd; background:#FFF; height:25px; padding-top:8px;}
+.tab{ border-bottom:1px solid #ddd; .background:#FFF; height:25px; padding-top:8px;}
 
 .tab span.tab-bar{ border:1px solid #ddd; border-bottom:0px; nav-left:10px; display:block; padding:5px 10px; float:left; margin-bottom:0px; margin-left:10px; background:#FFF}
-.tab span.hover{ border-bottom:1px solid #FFF; border-top:2px solid #ccc; padding-top:4px;}
+.tab span.hover{ border-bottom:1px solid #F8F8F8; border-top:2px solid #ccc; padding-top:4px; background:#f8f8f8 !important}
 .tab_con_box{ display:none}
 
 /*footer*/
@@ -105,8 +106,8 @@ ul.links-ul li a{ color:#666; font-size:12px;}
 .sub-nav{ height:32px; background:#030303; clear:both;   }
 .sub-nav dl {padding:0px; width:990px; margin:0 auto; background:#EDEDED;}
 .sub-nav dl dd{ float:left; line-height:32px; }
-.sub-nav dl dd a{ display:block; margin:0 0px;padding:0 0px;}
-.sub-nav dl dd a:hover{ background:#111;  color:#ccc;}
+.sub-nav dl dd a{ display:block; margin:0 16px;padding:0 8px;}
+.sub-nav dl dd a:hover{ background:#333;  color:#ccc;}
 
 
 
