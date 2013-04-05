@@ -1,5 +1,46 @@
 /*slider*/
+.top{ height:50px; border-bottom:1px solid #ddd; background:#F8F8F8; position:static}
+.nav-top{ width:1000px; margin:0 auto;}
 #slider{background-color:#111; width:100%; margin:0 auto }
+.nv{  padding-left:100px;width:160px; float:left; display:inline; line-height:30px; height:30px; margin-top:10px;}
+.nv li{ width:70px; height:30px; float:left;}
+.nv li a{ font-family:"微软雅黑"; font-size:20px; background:#444; color:#ccc; display:block; line-height:30px; text-align:center; margin-right:6px}
+.nv li a:hover{ background:#333; color:#fff; text-decoration:none}
+
+.py-box{ height:530px; background:#000}
+
+
+.v-title{ width:1000px; margin:0 auto; height:60px; line-height:24px; padding-top:8px;}
+.v-title h1{ font-size:20px;}
+.location{ line-height:36px; padding-bottom:10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .slider_box{width:966px; margin:0 auto;height: 338px;}
 .silder_tip{width: 92px;height: 92px;overflow: hidden;position: absolute;top: 0;right: 0;z-index:990; text-indent:-999px;background:url(../img/tip-tt.gif) no-repeat; }
 #movie_tip{background-position: -93px 0;}
@@ -32,14 +73,14 @@
 .left-m{ width:270px; min-height:300px; float:left; }
 ul.mv-list li { margin-left:28px}
 .solid{ border-bottom:1px solid #ddd; height:12px;}
-.mv-box{ width:660px; border-bottom:1px dotted #ddd; padding-bottom:16px;}
-.rt-box{ width:328px; margin-left:-1px; padding-left:0px;  border-left:0px  dashed #ddd;}
+.mv-box{ width:660px; padding-bottom:16px;}
+.rt-box{ width:320px; margin-left:-1px; padding-left:0px;  border-left:0px  dashed #ddd;}
 .rt-box .bt-title{ font-size:12px;  height:14px; padding-right:10px; padding-left:18px;}
 
+.btm-dotted{ border-bottom:1px dotted #ddd}
 
-
-dl.cate{line-height:22px;}
-dl.cate dt{ font-weight:bold; font-size:13px; color:#666; padding:6px 0px 0;}
+dl.cate{line-height:25px;}
+dl.cate dt{  font-weight:bold; font-size:13px; color:#666; padding:6px 0px 0;}
 dl.cate dd{ display:inline;}
 dl.cate dd a{ color:#555;display:inline-block; _float:left; _display:inline; padding:0px 4px}
 dl.cate dd a:hover{ background:#ccc; color:#000; text-decoration:none}

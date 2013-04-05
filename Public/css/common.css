@@ -1,5 +1,5 @@
 body,div,hr,blockquote,ul,ol,li,table,th,td,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,input,button,select,textarea,fieldset,legend{margin:0;padding:0}
-body{font-size:12px;color:#333; background:#f8f8f8;font-family:Tahoma,Geneva,sans-serif,'宋体'; }
+body{font-size:12px;color:#333; background:#FEFEFE;font-family:Tahoma,Geneva,sans-serif,'宋体'; }
 h1,h2,h3,h4,h5,h6{ padding:0px; margin:0px;}
 .clearfix{*zoom:1}
 .clearfix:after{display:block;clear:both;content:".";visibility:hidden;height:0}
@@ -14,6 +14,8 @@ table{border-collapse:collapse;border-spacing:0}
 button,.fhand{cursor:pointer}
 button,input,select,textarea{font-size:100%;}
 html{zoom:expression(function(ele){ele.style.zoom="1";document.execCommand("BackgroundImageCache",false,true)}(this))}
+
+p{ line-height:24px; color:#666; margin:0px; margin-bottom:16px;}
 /*通用*/
 .navbox_{width:990px;margin:0 auto; overflow:hidden;zoom:1}
 .navbox{width:990px;margin:0 auto; overflow:hidden;zoom:1; margin-top:8px;}
@@ -41,19 +43,19 @@ a:hover{color:#c00; text-decoration:underline;}
 #hd{ width:100%; margin:0 auto;  overflow:hidden; padding-top:10px;}
 .hd-box{ width:990px; margin:0 auto}
 #hd .logo{ width:180px; height:64px; padding-top:10px;}
-#hd .search{ width:400px; padding-left:60px; padding-top:12px; padding-bottom:10px;}
-#hd .search .label-box{ background:#eee; padding:3px; display:block;}
+ .search{ width:372px; padding-left:60px; padding-top:12px; padding-bottom:10px;}
+ .search .label-box{ background:#eee; padding:3px; display:block;}
 
-#hd .search .keyword{ border:1px solid #ddd; height:30px; background:#f9f9f9f9; width:318px;
+ .search .keyword{ border:1px solid #ddd; height:26px; background:#f9f9f9f9; width:300px;
 -moz-box-shadow:2px 2px 2px #eee inset;               /* For Firefox3.6+ */
 	-webkit-box-shadow:2px 2px 2px #eee inset;            /* For Chrome5+, Safari5+ */
 	box-shadow:2px 2px 2px #eee inset;                    /* For Latest Opera */
 }
-#hd .search .label-box button.sbt{ height:32px; line-height:26px; color:#ccc; width:74px; border:#525252; background: -moz-linear-gradient(top, #555, #000); /* Firefox */
+.search .label-box button.sbt{ height:28px; line-height:21px; color:#ccc; width:64px; border:#525252; background: -moz-linear-gradient(top, #555, #000); /* Firefox */
 background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #555), color-stop(1, #000)); /* Saf4+, Chrome */ font-size:14px;  letter-spacing:5px}
-#hd .search .h-key{ padding:4px 0px;}
-#hd .search .h-key a{ color:#999}
-#hd .login-btn{ width:300px; height:60px; text-align:right }
+ .search .h-key{ padding:4px 0px;}
+ .search .h-key a{ color:#999}
+ .login-btn{ width:300px; height:60px; text-align:right }
 .nv_box{ background:#000;}
 #nv{ height:38px; background:#000 top center; width:990px;  margin:0 auto; margin-top:8px; overflow:hidden;}
 #nv ul { width:750px; height:40px; line-height:40px; padding-left:20px}
@@ -63,7 +65,7 @@ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, 
 #wp{ width:990px; margin:0px auto;}
 
 
- ul.mv-list{ margin-left:-29px;}
+ ul.mv-list{ margin-left:-28px;}
  ul.mv-mid{ .width:510px; float:right; margin-left:-28px;}
  ul.mv-list li{ width:141px; height:210px; margin-left:0px; margin-top:4px; padding-bottom:14px;}
  ul.mv-list li .m-tu{ position:relative;}
