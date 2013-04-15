@@ -100,6 +100,9 @@ if(MODULE_NAME=="Page" && $_REQUEST['item']=="Cases")  $menu=7;
 		$this->assign('menu', $menu);
 		 //if(MODULE_NAME==1) $menu=1;
 		 
+		 
+		   $this->id=$_REQUEST['id'];
+		 
 	
     }
 
@@ -408,5 +411,18 @@ if(MODULE_NAME=="Page" && $_REQUEST['item']=="Cases")  $menu=7;
                 break;
         }
     }
+	
+	
+	public function _checkID(){
+		
+		   
+			 if(!$this->id){
+				 
+				    self::_message("error",'关键条件丢失');
+					 
+				 }
+		
+		}
+	
 }
 

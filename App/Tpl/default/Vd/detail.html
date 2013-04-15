@@ -1,0 +1,305 @@
+<include file="/Public:header_top"/>
+<script>
+//获取评论
+    $(document).ready(function(){
+	
+	   $("#pl_box").load('{:U("Comment/getList",array("id"=>$detail["id"],"mod"=>$moduleName))}');
+	   
+	   
+	   
+	   
+	   
+	   //顶踩
+
+	   $("#dingcai a").click(function(){
+		    
+			$this=$(this);
+			 $.ajax({  
+			  
+
+		  type:"GET",   
+
+			  url:'{:U("$moduleName/dingcai")}',
+
+			  data:{
+
+				   dingcai: $this.attr("class"),id:'{$detail["id"]}'
+
+				  },   
+
+			  beforeSend:function(){
+
+               },                
+
+			  success:function(data){
+				  
+				if(data!=0){
+					 
+					$this.next().text(data);
+					 
+					}else{
+						 
+						alert('您已经投票了');
+						 
+						}
+				  
+			  }
+			
+			  });
+			  
+		   
+		   })
+	  
+	});
+</script>
+<div class="v-title">
+<h1>电影，太极三</h1>
+<div class="location">
+<a href="#">首页</a>&gt;<a href="#">电影</a>&gt;<a href="#">魔幻片</a>
+</div>
+</div>
+
+
+
+
+
+
+<div class="box" style="margin-top:0px; padding-top:0px;">
+<div class="py-box">
+
+<div id="player">
+
+<div class="bofangqi">
+<script language="javascript">
+var BdPlayer = new Array();
+BdPlayer['time'] = 8;//缓冲广告展示时间(如果设为0,则根据缓冲进度自动控制广告展示时间)
+
+BdPlayer['tn'] = '12345678';//播放器下载地址渠道号
+BdPlayer['width'] = 720;//播放器宽度(只能为数字)
+BdPlayer['height'] = 500;//播放器高度(只能为数字)
+BdPlayer['showclient'] = 1;//是否显示拉起拖盘按钮(1为显示 0为隐藏)
+BdPlayer['url'] = 'bdhd://92448883|E828039EFE786AD7CFB0E7E4222C96F6|百度新首页.flv';//当前播放任务播放地址
+BdPlayer['nextcacheurl'] = 'bdhd://258153089|948E0EB38A2DFA1AF7D1B488E86AFFDD|还珠格格之燕儿翩翩飞02.HDTV.rmvb';//下一集播放地址(没有请留空)
+BdPlayer['lastwebpage'] = 'http://player.baidu.com/lib/eg.html?1';//上一集网页地址(没有请留空)
+BdPlayer['nextwebpage'] = 'http://player.baidu.com/lib/eg.html?2';//下一集网页地址(没有请留空)
+</script>
+<script language="javascript" src="http://php.player.baidu.com/bdplayer/player.js" charset="utf-8"></script>
+
+</div>
+
+<div class="mInfo">
+
+<h3>影片信息</h3>
+<dl class="">
+<dd><span class="t-label">上映：</span><a href="#">2012</a></dd>
+<dd><span class="t-label">类型：</span><a href="#">喜剧片</a> | <a href="#">魔幻</a></dd>
+
+<dd><span class="t-label">导演：</span><a href="#">张艺谋</a> | <a href="#">魔幻</a></dd>
+
+<dd><span class="t-label">播放：</span>123,343,333</dd>
+<dd class="kuan"><span class="t-label">主演：</span><a href="#">刘德华</a>　<a href="#">赵学友</a>　<a href="#">梁家辉</a>　<a href="#">赵雅芝</a></dd>
+<div class="cl"></div>
+</dl>
+
+<div id="x-detail">
+<h3>影片简介</h3>
+<p class="" style="color:#999; ">
+《On Call 36小时》（英语：The Hippocratic Crush），香港电视广播有限公司时装医务电视剧，由杨怡、马国明、罗仲谦及黄智雯领衔主演，监制潘嘉德，本剧为2012无线节目巡礼剧集之一，此剧是继《妙手仁心》、《仁心解码》后，无线电视再制作的医学电视剧，本剧特色：“能力越大，责任越大”，能力越强的人，在社会所肩负起的责任比一般人重，医生的责任就是救治病人，但其实医生也同时兼任着其他身份，包括父亲、子女、兄长等。当角色重叠，身份有所冲突时，医生亦可能会迷失。只有认清方向和目标，才能真正背负起救人的重责。
+</p>
+</div>
+<div class="cl"></div>
+
+</div>
+</div>
+
+</div>
+
+
+
+<div class="cl"></div>
+</div>
+
+
+
+
+
+
+<div id="wp">
+
+
+
+<div class="box">
+  <div class="cl"></div>
+
+
+
+</div>
+
+
+<!--推荐电影-->
+
+
+
+<div class="box">
+
+
+  <div class="mv-box lt">
+
+
+<ul class="mv-list" style=" margin-top:20px;">
+
+  <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/-5.jpg" src="/Public/img/grey.gif" ></a><a href="#" class="cat-a">电影</a></div>
+
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/dyp.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a"  href="#">电影</a></div>
+
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/-5.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a">电视剧</a></div>
+
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/dyp.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a"  href="#">电视剧</a></div>
+
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/-5.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a" href="#">综艺</a></div>
+
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/dyp.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a" href="#">综艺</a></div>
+
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/-5.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a" href="#">播客</a></div>
+
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/dyp.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a" href="#">播客</a></div>
+
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+
+
+
+
+
+
+
+
+
+  </ul>
+    <div class="cl"></div>
+
+
+
+
+<div id="pl_box"></div>
+  </div>
+  <div class="rt-box rt">
+  <div class="bt-title"><span class="more rt"><a href="#">更多</a></span>  <span class="h4 lt">电影分类</span> </div>
+  <dl class="cate m16">
+
+  <dd><a href="#">喜剧</a></dd>
+  <dd><a href="#">爱情</a></dd>
+  <dd><a href="#">剧情</a></dd>
+   <dd><a href="#">悬疑</a></dd>
+    <dd><a href="#">魔幻</a></dd>
+  <dd><a href="#">恐怖</a></dd>
+  <dd><a href="#">惊悚</a></dd>
+  <dd><a href="#">纪录</a></dd>
+  <dd><a href="#">科幻</a></dd>
+  <dd><a href="#">伦理</a></dd>
+    <dd><a href="#">灾难</a></dd>
+  <dd><a href="#">动画</a></dd>
+  <dt>地区</dt>
+  <dd><a href="#">大陆</a></dd>
+  <dd><a href="#">香港</a></dd>
+  <dd><a href="#">台湾</a></dd>
+  <dd><a href="#">新加坡</a></dd>
+  <dd><a href="#">日韩</a></dd>
+  <dd><a href="#">欧美</a></dd>
+  <dd><a href="#">东南亚</a></dd>
+   <dd><a href="#">印度</a></dd>
+<dt>年代</dt>
+  <dd><a href="#">1950</a></dd>
+  <dd><a href="#">1960</a></dd>
+  <dd><a href="#">1970</a></dd>
+  <dd><a href="#">1980</a></dd>
+  <dd><a href="#">1990</a></dd>
+  <dd><a href="#">2000</a></dd>
+  <dd><a href="#">2002</a></dd>
+   <dd><a href="#">2005</a></dd>
+    <dd><a href="#">2008</a></dd>
+     <dd><a href="#">2010</a></dd>
+     <dd><a href="#">2012</a></dd>
+  </dl>
+  <div class="cl"></div>
+
+  <div class="order-box mtop20">
+  <h5 class="pai-title">排行</h5>
+   <div class="tab m16" style="padding-left:80px;"><span class="tab-bar hover">播放</span><span class="tab-bar">评分</span></div>
+   <div class="tab-box">
+   <div class="tab_con_box" style="display:block">
+   <ol class="pai-list m16">
+
+   <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span><span class="did rt">343</span></li>
+    <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span><span class="did rt">343</span></li>
+     <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span><span class="did rt">343</span></li>
+      <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span><span class="did rt">343</span></li>
+       <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span><span class="did rt">343</span></li>
+        <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span><span class="did rt">343</span></li>
+         <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span><span class="did rt">343</span></li>
+          <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span><span class="did rt">343</span></li>
+           <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span><span class="did rt">343</span></li>
+            <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span><span class="did rt">343</span></li>
+   </ol>
+   </div>
+
+   <div class="tab_con_box">
+   <ol class="pai-list m16">
+
+   <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span><span class="did rt">343</span></li>
+    <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span><span class="did rt">343</span></li>
+     <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span><span class="did rt">343</span></li>
+      <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span><span class="did rt">343</span></li>
+
+        <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span><span class="did rt">343</span></li>
+    <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span><span class="did rt">343</span></li>
+     <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span><span class="did rt">343</span></li>
+      <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span><span class="did rt">343</span></li>
+       <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span><span class="did rt">343</span></li>
+       <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span><span class="did rt">343</span></li>
+   </ol>
+   </div>
+   </div>
+   </div>
+  </div>
+  <div class="cl"></div>
+</div>
+
+
+
+
+
+<div class="box"></div>
+
+
+<!--友情链接---></div>
+<include file="/Public:footer"/>

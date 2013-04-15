@@ -1,0 +1,45 @@
+
+/**=============评论开始===========*/
+div.pinglun{ height:180px; border:0px; margin-top:0px;}
+div.pinglun h4{ width:120px; height:40px; line-height:40px; font-size:14px; color:#666;}
+div.pinglun form{ margin:0; padding:0;}
+
+.ping_text{ width:648px;border:1px solid #ddd; height:80px;border-top:1px solid #999; border-left:1px solid #999; line-height:20px; color:#333;}
+.p_bt{ width:650px; height:30px; background:url(../img/abg.png) left -230px; color:#333; border:1px solid #ddd; line-height:30px; margin-top:10px; color:#666; color:14px; }
+.p_bt:hover{ border-top:1px solid #333; border-left:1px solid #333}
+div.ping_list{ padding-bottom:10px; background:#FFF; border:1px solid #DDD}
+div.ping_list h4{ background:#F8F8F8; color:#666; line-height:36px; height:36px; padding-left:15px; border-bottom:1px solid #ddd; margin-bottom:20px;}
+div.ping_list .face{ float:left; _display:inline; width:60px; line-height:24px; margin-right:18px;}
+.p_l{  border-bottom:1px dotted #CCC  ; padding-bottom:16px; margin:10px 16px;}
+.p_date{ color:#ccc}
+span.ming a{ color:#25A1E6}
+.p_content{ width:520px; float:left; _display:inline; line-height:24px; font-size:12px; color:#666;}
+
+.page_num{ height:36px; margin-top:10px; clear:both; padding-left:160px; overflow:hidden;}
+
+.page_num a{ float:left; display:block; display:inline; text-align:center; color:#666}
+.page_num a:hover{ color:#CCC; background:#000; text-decoration:none}
+.page_num a.p_num{ width:20px; height:20px; line-height:20px; background:#F7F7F7; color:#999; margin-left:8px; border:1px solid #ddd}
+.page_num a.p_num:hover{color:#CCC; background:#000; text-decoration:none}
+.page_num a.hover{color:#CCC; background:#000; text-decoration:none}
+.page_num a.shang{height:20px; line-height:20px; width:50px; text-align:center; border:1px solid #ddd; margin-left:8px;}
+div.cont_box{ border:1px solid #ddd; padding:10px 24px; background:#FFF}
+div.cont_box h1{ font-size:24px; line-height:50px; color:#333;}
+div.laiyuan{ line-height:25px;  font-size:12px; color:#999; border-top:1px dotted #ddd; margin:10px auto}
+div.zhaiyao{ border:1px solid #ededed; background:#F8F8F8; color:#666; line-height:25px; padding:15px;}
+.zhengwen p{ line-height:28px; color:#454545; font-size:14px;}
+div.news_list_box{ height:300px;}
+/**=====登录部分========**/
+div.logo_u{ height:40px; margin-top:100px; text-align:left; padding-left:20px;}
+div.login_box{ width:300px; margin: 0 auto; overflow:hidden;}
+div.hezi{ width:600px;}
+div.lbox1,div.lbox2{ float:left; display:inline;}
+div.login_form{ width:300px; height:280px; border:0px solid #DDD; border-bottom:1px solid #DDD }
+div.login_form input{ display:block; clear:both; border-bottom:1px solid #ddd;border-right:1px solid #ddd; border-left:1px solid #999; border-top:1px solid #999;}
+div.login_form h2{ font-family:"微软雅黑"; font-size:25px; line-height:40px; font-weight:100; color:#999; padding-left:20px; margin-top:10px;}
+div.login_form form{ margin:10px 24px;}
+div.login_form form input{ width:240px; height:36px; line-height:36px; margin-top:16px; color:#999; padding-left:10px; background:#FDFDFD}
+div.login_form form input.lbt{ width:100px; height:40px; background:url(../img/abg.png) left -271px; border:0px; cursor:pointer}
+div.login_form form input.regbt{width:100px; height:40px; background:url(../img/abg.png) left -349px; border:0px; cursor:pointer}
+div.login_form form a.reg,div.login_form form a.denglu{ color:#666; display:block; margin-top:-30px; margin-left:120px; font-size:14px;}
+.l_footer{ line-height:20px; padding-left:10px; color:#B0B0B0; font-size:12px;}

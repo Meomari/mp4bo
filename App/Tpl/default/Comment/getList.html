@@ -3,7 +3,7 @@
       <form action="" method="" name="fr" id="fr">
         <textarea name="content" id="content" class="ping_text"></textarea>
         <input id="module" name="module" type="hidden" value="<?php echo $_GET['mod']; ?>" />
-        <input id="tid" name="tid" type="hidden" value="<?php echo $_GET['item'];?>" />
+        <input id="tid" name="tid" type="hidden" value="<?php echo $_GET['id'];?>" />
         <div align="right">
           <input type="button" class="p_bt" name="bt" id="commentSubmit" value="说完了" />
         </div>
@@ -75,7 +75,7 @@ $(function(){
 
 					case 'success':
 
-					 $("#pl_box").load('{:U("Comment/getList",array("item"=>$_GET["item"],"mod"=>$_GET["mod"]))}');
+					 $("#pl_box").load('{:U("Comment/getList",array("id"=>$_GET["id"],"mod"=>$_GET["mod"]))}');
 
 						return true;
 

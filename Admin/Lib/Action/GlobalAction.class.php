@@ -1,4 +1,4 @@
-3<?php
+<?php
 
 class GlobalAction extends Action
 {

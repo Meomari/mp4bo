@@ -167,15 +167,13 @@ class VdAction extends GlobalAction
 
     public function detail(){
 
-           $titleId = intval($_GET['item']);
-		if (!$titleId) parent::_message('error','条件丢失');
-		
+        parent::_checkID();
 
-        $commentCount = M('Comment')->where("title_id={$titleId} and module='vd'")->count();
+        $commentCount = M('Comment')->where("title_id={$this->id} and module='vd'")->count();
 
         $this->assign('commentCount', $commentCount);
 
-        parent::getJoinDetail(array("a.id={$titleId}", "id={$titleId}"), 'view_count', C('DB_PREFIX').'vd a', C('DB_PREFIX').'category b on a.category_id=b.id','a.*, b.title as categoryName');
+        parent::getJoinDetail(array("a.id={$this->id}", "id={$this->id}"), 'view_count', C('DB_PREFIX').'vd a', C('DB_PREFIX').'category b on a.category_id=b.id','a.*, b.title as categoryName');
 
     }
 
@@ -185,13 +183,13 @@ class VdAction extends GlobalAction
 
 	  public function hdetail(){
 
-        $titleId = intval($_GET['item']);
+       parent::_checkID();
 
-        $commentCount = M('Comment')->where("title_id={$titleId} and module='vd'")->count();
+        $commentCount = M('Comment')->where("title_id={$this->id} and module='vd'")->count();
 
         $this->assign('commentCount', $commentCount);
 
-          parent::getJoinDetail(array("a.id={$titleId}", "id={$titleId}"), 'view_count', C('DB_PREFIX').'vd a', C('DB_PREFIX').'category b on a.category_id=b.id','a.*, b.title as categoryName');
+          parent::getJoinDetail(array("a.id={$this->id}", "id={$this->id}"), 'view_count', C('DB_PREFIX').'vd a', C('DB_PREFIX').'category b on a.category_id=b.id','a.*, b.title as categoryName');
 
     
 

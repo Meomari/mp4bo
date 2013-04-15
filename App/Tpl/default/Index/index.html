@@ -1,181 +1,909 @@
-<include file="Public:header"/>
-<!--warrper  start-->
-<div class="warrper w_home">
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<script src="/Public/Js/jquery.js"></script>
+<script  src="/Public/Js/jquery.lazyload.js"></script>
+<link href="/Public/css/common.css" rel="stylesheet" type="text/css">
+<link href="/Public/css/index.css" rel="stylesheet" type="text/css">
+<script src="/Public/Js/jquery.slides.js">
 
-<!--left  start-->
-<div class="w_left">
-<div class="left_box1">
-<div class="new_v">
-<div class="tuijian">
-  <img src="img/vo1.gif" width="310" height="251" /></div>
-<div class="cl"></div>
+
+</script>
+
+<script>
+$(document).ready(function(e) {
+	         //全局选项卡
+             $('.tab span.tab-bar').hover(function(index) {
+			
+                   $(this).addClass('hover').siblings().removeClass('hover');
+		           $(this).parent().next().find(".tab_con_box").eq($(this).index()).fadeIn(0).siblings().fadeOut(0);  
+			 
+			 });
+			 
+			 //排行数字
+			    p=0
+			   $(".pai-list li span.num").each(function(index, element) {
+                p=p+1
+			   // p<4?$(this).css({'background':'#F60','color':'#FFF'}):'';
+				p<10?$(this).text(p):$(this).text(p);	
+				p>9?p=0:'';	
+					
+            });
   
+});
+
+</script>
+
+</head>
+
+<body>
+<div id="hd"> 
+  <!--logo-->
+  <div class="hd-box">
+  <div class="logo lt"> <img src="/Public/img/logo.png"> </div>
+  <div class="search lt">
+    <div class="s-form">
+      <form name="search" id="search" method="get" action="">
+        <label class="label-box">
+          <input name="keyword" id="keyword rt" class="keyword"/><button type="submit" class="sbt rt">搜索</button>
+        </label>
+      </form>
+    </div>
+    
+  </div>
+  <div class="login-btn lt"><a href="#" class="btn">登陆</a> | <a href="#" class="btn">注册</a></div>
+  <div class="cl"></div>
+  </div>
+  <div class="nv_box">
+  <div id="nv">
+    <ul>
+      <li><a href="#" class="hover">首页</a></li>
+      <li><a href="#">电影</a></li>
+      <li><a href="#">电视剧</a></li>
+      <li><a href="#">美剧</a></li>
+      <li><a href="#">综艺</a></li>
+      <li><a href="#">电视直播</a></li>
+      <li><a href="#">男性剧场</a></li>
+      <li><a href="#">三级片</a></li>
+      <li><a href="#">港台三级片</a></li>
+    </ul>
+  </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div id="slider">
+
+<div  class="slidebox">
+
+ <div class="slde_list">
+ <div class="silder_tip" id="movie_tip">电影</div>
+   <ul>
+
+  <li class="silder_panel clearfix" num="1"> <a href="#" class="f_l"><img src="/Public/img/2012101623050497.jpg" /></a>
+        <div class="silder_intro f_r">
+          <h3> <strong><a href="#">太极之从零开始</a></strong> <span>最新：TS版</span> </h3>
+          <ul>
+            <li>
+              <label>类型：</label>
+              <span><a href="#">动作</a><a href="#">古装</a><a href="#">预告片</a></span></li>
+            <li>
+              <label>导演：</label>
+              <span><a href="#">冯德伦</a></span></li>
+            <li>
+              <label>主演：</label>
+              <span><a href="#">梁家辉</a><a href="#">杨颖</a><a href="#">彭于晏</a><a href="#">冯绍峰</a></span></li>
+          </ul>
+          <p>[<strong>影片介绍</strong>]《太极之从零开始》是由华谊兄弟出品，王中磊担任制片人、陈国富监制、冯德伦导演的电影《太极》三部曲中的第一部。该片已入围第69届威尼斯电影节非..</p>
+          <a class="silder_play" target="_blank" href="#">马上观看</a></div>
+      </li>
+ <li class="silder_panel clearfix" num="2"> <a href="#" class="f_l"><img src="/Public/img/2012101623074142.jpg" /></a>
+        <div class="silder_intro f_r">
+          <h3> <strong><a href="#">铜雀台</a></strong> <span>最新：TC</span> </h3>
+          <ul>
+            <li>
+              <label>类型：</label>
+              <span><a href="#">爱情</a><a href="#">古装</a><a href="#">预告片</a></span></li>
+            <li>
+              <label>导演：</label>
+              <span><a href="#">赵林山</a></span></li>
+            <li>
+              <label>主演：</label>
+              <span><a href="#">周润发</a><a href="#">刘亦菲</a><a href="#">玉木宏</a></span></li>
+          </ul>
+          <p>[<strong>影片介绍</strong>]庚子年，恰逢天象“四星合一”，预示改朝换代之征兆。曹操（周润发饰）的部属、尤其他的公子曹丕（邱心志饰），希望借此良机推献帝禅位、曹操登..</p>
+          <a class="silder_play" target="_blank" href="http://www.quabc.com/movie/tongquetai.shtml">马上观看</a></div>
+      </li>
+     <li class="silder_panel clearfix" num="3"> <a href="#" class="f_l"><img src="/Public/img/2012092600451002.jpg" /></a>
+        <div class="silder_intro f_r">
+          <h3> <strong><a href="#">生化危机5</a></strong> <span>最新：TC</span> </h3>
+          <ul>
+            <li>
+              <label>类型：</label>
+              <span><a href="#">科幻</a><a href="#">惊悚</a><a href="#">悬疑</a></span></li>
+            <li>
+              <label>导演：</label>
+              <span><a href="#">保罗安德森</a></span></li>
+            <li>
+              <label>主演：</label>
+              <span><a href="#">米拉乔沃维奇</a><a href="#">西耶娜盖尔利</a><a href="#">李冰冰</a><a href="#">米歇尔罗德里格兹</a></span></li>
+          </ul>
+          <p>[<strong>影片介绍</strong>]影片设定在1998年，影片不再是只把焦点集中在爱丽丝这个角色身上，吉尔将在由安布雷拉（Umbrella）制造的僵尸潮的爆发中扮演重要角色。里昂肯尼迪..</p>
+          <a class="silder_play" target="_blank" href="http://quabc.com/movie/tingfengzhe.shtml">马上观看</a></div>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <li class="silder_panel clearfix" num="4"> <a href="#" class="f_l"><img src="/Public/img/2012101623074142.jpg" /></a>
+        <div class="silder_intro f_r">
+          <h3> <strong><a href="#">铜雀台</a></strong> <span>最新：TC</span> </h3>
+          <ul>
+            <li>
+              <label>类型：</label>
+              <span><a href="#">爱情</a><a href="#">古装</a><a href="#">预告片</a></span></li>
+            <li>
+              <label>导演：</label>
+              <span><a href="#">赵林山</a></span></li>
+            <li>
+              <label>主演：</label>
+              <span><a href="#">周润发</a><a href="#">刘亦菲</a><a href="#">玉木宏</a></span></li>
+          </ul>
+          <p>[<strong>影片介绍</strong>]庚子年，恰逢天象“四星合一”，预示改朝换代之征兆。曹操（周润发饰）的部属、尤其他的公子曹丕（邱心志饰），希望借此良机推献帝禅位、曹操登..</p>
+          <a class="silder_play" target="_blank" href="http://www.quabc.com/movie/tongquetai.shtml">马上观看</a></div>
+      </li>
+     <li class="silder_panel clearfix" num="5"> <a href="#" class="f_l"><img src="/Public/img/2012092600451002.jpg" /></a>
+        <div class="silder_intro f_r">
+          <h3> <strong><a href="#">生化危机5</a></strong> <span>最新：TC</span> </h3>
+          <ul>
+            <li>
+              <label>类型：</label>
+              <span><a href="#">科幻</a><a href="#">惊悚</a><a href="#">悬疑</a></span></li>
+            <li>
+              <label>导演：</label>
+              <span><a href="#">保罗安德森</a></span></li>
+            <li>
+              <label>主演：</label>
+              <span><a href="#">米拉乔沃维奇</a><a href="#">西耶娜盖尔利</a><a href="#">李冰冰</a><a href="#">米歇尔罗德里格兹</a></span></li>
+          </ul>
+          <p>[<strong>影片介绍</strong>]影片设定在1998年，影片不再是只把焦点集中在爱丽丝这个角色身上，吉尔将在由安布雷拉（Umbrella）制造的僵尸潮的爆发中扮演重要角色。里昂肯尼迪..</p>
+          <a class="silder_play" target="_blank" href="http://quabc.com/movie/tingfengzhe.shtml">马上观看</a></div>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+       <li class="silder_panel clearfix" num="6"> <a href="#" class="f_l"><img src="/Public/img/2012101623074142.jpg" /></a>
+        <div class="silder_intro f_r">
+          <h3> <strong><a href="#">铜雀台</a></strong> <span>最新：TC</span> </h3>
+          <ul>
+            <li>
+              <label>类型：</label>
+              <span><a href="#">爱情</a><a href="#">古装</a><a href="#">预告片</a></span></li>
+            <li>
+              <label>导演：</label>
+              <span><a href="#">赵林山</a></span></li>
+            <li>
+              <label>主演：</label>
+              <span><a href="#">周润发</a><a href="#">刘亦菲</a><a href="#">玉木宏</a></span></li>
+          </ul>
+          <p>[<strong>影片介绍</strong>]庚子年，恰逢天象“四星合一”，预示改朝换代之征兆。曹操（周润发饰）的部属、尤其他的公子曹丕（邱心志饰），希望借此良机推献帝禅位、曹操登..</p>
+          <a class="silder_play" target="_blank" href="http://www.quabc.com/movie/tongquetai.shtml">马上观看</a></div>
+      </li>
+     <li class="silder_panel clearfix" num="7"> <a href="#" class="f_l"><img src="/Public/img/2012092600451002.jpg" /></a>
+        <div class="silder_intro f_r">
+          <h3> <strong><a href="#">生化危机5</a></strong> <span>最新：TC</span> </h3>
+          <ul>
+            <li>
+              <label>类型：</label>
+              <span><a href="#">科幻</a><a href="#">惊悚</a><a href="#">悬疑</a></span></li>
+            <li>
+              <label>导演：</label>
+              <span><a href="#">保罗安德森</a></span></li>
+            <li>
+              <label>主演：</label>
+              <span><a href="#">米拉乔沃维奇</a><a href="#">西耶娜盖尔利</a><a href="#">李冰冰</a><a href="#">米歇尔罗德里格兹</a></span></li>
+          </ul>
+          <p>[<strong>影片介绍</strong>]影片设定在1998年，影片不再是只把焦点集中在爱丽丝这个角色身上，吉尔将在由安布雷拉（Umbrella）制造的僵尸潮的爆发中扮演重要角色。里昂肯尼迪..</p>
+          <a class="silder_play" target="_blank" href="http://quabc.com/movie/tingfengzhe.shtml">马上观看</a></div>
+      </li>
+      
+      
+      <div class="cl"></div>
+
+   </ul>
+
+   
+
+ </div>
+
+
+<div class="slidbar">
+
+   <ul>
+      <li value="1"><img src="/Public/img/2012101623050497.jpg"/></li>
+      <li value="2"><img src="/Public/img/2012101623074142.jpg"/></li>
+      <li value="3"><img src="/Public/img/2012092600425434.jpg"/></li>
+       <li value="4"><img src="/Public/img/2012101623074142.jpg"/></li>
+      <li value="5"><img src="/Public/img/2012092600425434.jpg"/></li>
+        <li value="6"><img src="/Public/img/2012101623074142.jpg"/></li>
+      <li value="7"><img src="/Public/img/2012092600425434.jpg"/></li>
+     <div class="cl"></div>
+    </ul>
+
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="wp">
+<div class="box"><div class="bt-title"> <span class="more rt"><a href="#">更多</a></span> <span class="h3 lt">热播影视</span> </div>
+  <div class="hot  ">
+    
+    
+    <ul class="mv-list">
+      
+      <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/-5.jpg" src="/Public/img/grey.gif" ></a><a href="#" class="cat-a">电影</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/dyp.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a"  href="#">电影</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/-5.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a">电视剧</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/dyp.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a"  href="#">电影</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/-5.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a">电视剧</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/dyp.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a"  href="#">电视剧</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/-5.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a" href="#">综艺</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/dyp.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a" href="#">综艺</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/-5.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a" href="#">播客</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/dyp.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a" href="#">播客</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/-5.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a" href="#">播客</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/dyp.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a" href="#">播客</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+      
+       
  
-</div>
-</div>
-<div class="left_box2">
-<div class="wen">
-<h3><div class="fanye"><span class="shang"></span> <span class="xia"></span></div><div class="tt">热播视频</div></h3>
-<ul>
-  <li>
-  <a href="#" class="img">
-  <img src="img/vo1.gif" width="130" height="80"/>
-  </a>
-  <p class="title"><a href="#">老梁说天下郭美美这这是老梁第一次说这</a></p>
- <div class="bofang"><span class="tt">观看 </span>56662　<span class="tt">评论 </span>25</div>
-  </li>
+       
+     
+        
+      
+      
+    </ul>
+    <div class="cl"></div>
+  </div>
   
-   <li>
-  <a href="#" class="img">
-  <img src="img/vo1.gif" width="130" height="80"/>
-  </a>
-  <p class="title"><a href="#">老梁说天下郭美美这这是老梁第一次说这</a></p>
- <div class="bofang"><span class="tt">观看 </span>56662　<span class="tt">评论 </span>25</div>
-  </li>
-   <li>
-  <a href="#" class="img">
-  <img src="img/vo1.gif" width="130" height="80"/>
-  </a>
-  <p class="title"><a href="#">老梁说天下郭美美这这是老梁第一次说这</a></p>
- <div class="bofang"><span class="tt">观看 </span>56662　<span class="tt">评论 </span>25</div>
-  </li>
-   <li>
-  <a href="#" class="img">
-  <img src="img/vo1.gif" width="130" height="80"/>
-  </a>
-  <p class="title"><a href="#">老梁说天下郭美美这这是老梁第一次说这</a></p>
- <div class="bofang"><span class="tt">观看 </span>56662　<span class="tt">评论 </span>25</div>
-  </li>
-  <li>
-  <a href="#" class="img">
-  <img src="img/vo1.gif" width="130" height="80"/>
-  </a>
-  <p class="title"><a href="#">老梁说天下郭美美这这是老梁第一次说这</a></p>
- <div class="bofang"><span class="tt">观看 </span>56662　<span class="tt">评论 </span>25</div>
-  </li>
+  <div class="cl"></div>
   
-   <li>
-  <a href="#" class="img">
-  <img src="img/vo1.gif" width="130" height="80"/>
-  </a>
-  <p class="title"><a href="#">老梁说天下郭美美这这是老梁第一次说这</a></p>
- <div class="bofang"><span class="tt">观看 </span>56662　<span class="tt">评论 </span>25</div>
-  </li>
-     <li>
-  <a href="#" class="img">
-  <img src="img/vo1.gif" width="130" height="80"/>
-  </a>
-  <p class="title"><a href="#">老梁说天下郭美美这这是老梁第一次说这</a></p>
- <div class="bofang"><span class="tt">观看 </span>56662　<span class="tt">评论 </span>25</div>
-  </li>
-     <li>
-  <a href="#" class="img">
-  <img src="img/vo1.gif" width="130" height="80"/>
-  </a>
-  <p class="title"><a href="#">老梁说天下郭美美这这是老梁第一次说这</a></p>
- <div class="bofang"><span class="tt">观看 </span>56662　<span class="tt">评论 </span>25</div>
-  </li>
-</ul>
+  
+  
 </div>
+
+
+<!--推荐电影-->
+
+
+
+<div class="box btm-dotted">
+<div class="bt-title"><span class="h3 lt">电影 / <span class="en">Move</span></span> </div>
+
+  <div class="mv-box lt ">
+  
+
+  
+    
+      
+      
+    
+   <ul class=" mv-list mv-mid">
+      
+      <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/-5.jpg" src="/Public/img/grey.gif" ></a><a href="#" class="cat-a">电影</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/dyp.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a"  href="#">电影</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/-5.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a">电视剧</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/dyp.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a"  href="#">电视剧</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/-5.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a" href="#">综艺</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/dyp.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a" href="#">综艺</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/-5.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a" href="#">播客</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/dyp.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a" href="#">播客</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+      
+       
+ 
+       
+     
+        
+      
+      
+    </ul>
+    <div class="cl"></div>
+   
+  </div>
+  <div class="rt-box rt ">
+  <div class="bt-title"><span class="more rt"><a href="#">更多</a></span>  <span class="h4 lt">电影分类</span> </div>
+  <dl class="cate m16">
+
+  <dd><a href="#">喜剧</a></dd>
+  <dd><a href="#">爱情</a></dd>
+  <dd><a href="#">剧情</a></dd>
+   <dd><a href="#">悬疑</a></dd>
+    <dd><a href="#">魔幻</a></dd>
+  <dd><a href="#">恐怖</a></dd>
+  <dd><a href="#">惊悚</a></dd>
+  <dd><a href="#">纪录</a></dd>
+  <dd><a href="#">科幻</a></dd>
+  <dd><a href="#">伦理</a></dd>
+    <dd><a href="#">灾难</a></dd>
+  <dd><a href="#">动画</a></dd>
+    <dd><a href="#">文艺</a></dd>
+      <dd><a href="#">励志</a></dd>
+       <dd><a href="#">古装</a></dd>
+        <dd><a href="#">谍战</a></dd>
+  <dt>地区</dt>
+  <dd><a href="#">大陆</a></dd>
+  <dd><a href="#">香港</a></dd>
+  <dd><a href="#">台湾</a></dd>
+  <dd><a href="#">新加坡</a></dd>
+  <dd><a href="#">日本</a></dd>
+  <dd><a href="#">韩国</a></dd>
+  <dd><a href="#">泰国</a></dd>
+   <dd><a href="#">印度</a></dd>
+    <dd><a href="#">欧洲</a></dd>
+     <dd><a href="#">美国</a></dd>
+     <dd><a href="#">其他</a></dd>
+     
+     <dt>年代</dt>
+  <dd><a href="#">1950</a></dd>
+  <dd><a href="#">1960</a></dd>
+  <dd><a href="#">1970</a></dd>
+  <dd><a href="#">1980</a></dd>
+  <dd><a href="#">1990</a></dd>
+  <dd><a href="#">2000</a></dd>
+  <dd><a href="#">2002</a></dd>
+   <dd><a href="#">2005</a></dd>
+    <dd><a href="#">2008</a></dd>
+     <dd><a href="#">2010</a></dd>
+     <dd><a href="#">2012</a></dd>
+
+  </dl>
+  <div class="cl"></div>
+  
+  <div class="order-box mtop20">
+  <h5 class="pai-title">排行</h5>
+   <div class="tab m16" style="padding-left:180px;"><span class="tab-bar hover">播放</span><span class="tab-bar">评分</span></div>
+   <div class="tab-box">
+   <div class="tab_con_box" style="display:block">
+   <ol class="pai-list m16">
+   
+   <li><span class="num lt"></span><span class="title lt"><a href="#">大太监33撒旦法</a></span></li>
+    <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+     <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+      <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+       <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+        <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+         <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+          <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+           <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+            <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+   </ol>
+   </div>
+   
+   <div class="tab_con_box">
+   <ol class="pai-list m16">
+   
+   <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+    <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+     <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+      <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+      
+        <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+    <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+     <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+      <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+       <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+       <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+   </ol>
+   </div>
+   </div>
+   </div>
+  </div>
+  <div class="cl"></div>
 </div>
-<div class="left_box2 xiliwen">
-<h3><div class="fanye"><span class="shang"></span> <span class="xia"></span></div><div class="tt">犀客利文</div></h3>
+
+<!--推荐电视剧--->
+
+<div class="box">
+
+<div class="bt-title"><span class="h3 lt">电视剧 / <span class="en">TVplay</span></span> </div>
+  <div class="mv-box lt ">
+    
+    
+<ul class="mv-list mv-mid">
+      
+      <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/-5.jpg" src="/Public/img/grey.gif" ></a><a href="#" class="cat-a">电影</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/dyp.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a"  href="#">电影</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/-5.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a">电视剧</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/dyp.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a"  href="#">电视剧</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/-5.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a" href="#">综艺</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/dyp.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a" href="#">综艺</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/-5.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a" href="#">播客</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/dyp.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a" href="#">播客</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+      
+       
+ 
+       
+     
+        
+      
+      
+    </ul>
+    <div class="cl"></div>
+   
+  </div>
+  <div class="rt-box rt ">
+  <div class="bt-title"><span class="h4 lt">电视剧分类</span> </div>
+  <dl class="cate m16">
+
+  <dd><a href="#">古装</a></dd>
+  <dd><a href="#">神话</a></dd>
+  <dd><a href="#">历史</a></dd>
+   <dd><a href="#">宫系列</a></dd>
+    <dd><a href="#">生活片</a></dd>
+  <dd><a href="#">武侠片</a></dd>
+  <dd><a href="#">纪录片</a></dd>
+  <dd><a href="#">纪录</a></dd>
+  <dd><a href="#">科幻</a></dd>
+  <dd><a href="#">伦理</a></dd>
+    <dd><a href="#">灾难</a></dd>
+  <dd><a href="#">动画</a></dd>
+  
+  <dt>地区</dt>
+  <dd><a href="#">大陆</a></dd>
+  <dd><a href="#">香港</a></dd>
+  <dd><a href="#">台湾</a></dd>
+  <dd><a href="#">新加坡</a></dd>
+  <dd><a href="#">日韩</a></dd>
+  <dd><a href="#">欧美</a></dd>
+  <dd><a href="#">东南亚</a></dd>
+   <dd><a href="#">印度</a></dd>
+ <dt>年代</dt>
+
+  <dd><a href="#">1950</a></dd>
+  <dd><a href="#">1960</a></dd>
+  <dd><a href="#">1970</a></dd>
+  <dd><a href="#">1980</a></dd>
+  <dd><a href="#">1990</a></dd>
+  <dd><a href="#">2000</a></dd>
+  <dd><a href="#">2002</a></dd>
+   <dd><a href="#">2005</a></dd>
+    <dd><a href="#">2008</a></dd>
+     <dd><a href="#">2010</a></dd>
+     <dd><a href="#">2012</a></dd>
+  </dl>
+  <div class="cl"></div>
+  
+  <div class="order-box mtop20">
+  <h5 class="pai-title">排行</h5>
+   <div class="tab m16" style="padding-left:180px;"><span class="tab-bar hover">播放</span><span class="tab-bar">评分</span></div>
+   <div class="tab-box">
+   <div class="tab_con_box" style="display:block">
+   <ol class="pai-list m16">
+   
+   <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+    <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+     <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+      <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+       <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+        <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+         <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+          <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+           <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+            <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+   </ol>
+   </div>
+   
+   <div class="tab_con_box">
+   <ol class="pai-list m16">
+   
+   <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+    <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+     <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+      <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+      <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+    <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+     <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+      <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+      <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+      <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+   </ol>
+   </div>
+   </div>
+   </div>
+  </div>
+  <div class="cl"></div>
+</div>
+
+
+
+
+
+
+
+<!--推荐综艺节目--->
+
+<div class="box"><div class="bt-title"> <span class="more rt"><a href="#">更多</a></span> <span class="h3 lt">综艺 / <span class="en">综艺</span></span> </div>
+  <div class="mv-box lt ">
+    
+    
+    <ul class="mv-list mv-mid">
+      
+      <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/-5.jpg" src="/Public/img/grey.gif" ></a><a href="#" class="cat-a">电影</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/dyp.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a"  href="#">电影</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/-5.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a">电视剧</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/dyp.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a"  href="#">电视剧</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/-5.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a" href="#">综艺</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/dyp.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a" href="#">综艺</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/-5.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a" href="#">播客</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+         <li class="lt">
+        <div class="m-tu"><a href="#"><img  data-original="/Public/img/dyp.jpg" src="/Public/img/grey.gif" ></a><a class="cat-a" href="#">播客</a></div>
+        
+        <div class="mv-title"><a href="#">男人如衣服</a>　<span class="tag">/ <a href="#"></a> <a href="#">动作片</a></span></div>
+        </li>
+        
+      
+       
+ 
+       
+     
+        
+      
+      
+    </ul>
+    <div class="cl"></div>
+   
+  </div>
+  <div class="rt-box rt ">
+  <div class="bt-title"><span class="h4 lt">综艺分类</span> </div>
+  <dl class="cate m16">
+
+
+  
+  
+  
+    <dd><a href="#">相声</a></dd>
+  <dd><a href="#">小品</a></dd>
+  <dd><a href="#">二人转</a></dd>
+   <dd><a href="#">戏曲</a></dd>
+    <dd><a href="#">音乐</a></dd>
+     <dd><a href="#">舞蹈</a></dd>
+    <dd><a href="#">短片</a></dd>
+  <dd><a href="#">文娱</a></dd>
+  <dd><a href="#">教学</a></dd>
+  <dd><a href="#">探险</a></dd>
+  <dd><a href="#">访谈</a></dd>
+  <dd><a href="#">讲座</a></dd>
+  <dt>地区</dt>
+  <dd><a href="#">大陆</a></dd>
+  <dd><a href="#">香港</a></dd>
+  <dd><a href="#">台湾</a></dd>
+  <dd><a href="#">新加坡</a></dd>
+  <dd><a href="#">日韩</a></dd>
+  <dd><a href="#">欧美</a></dd>
+  <dd><a href="#">东南亚</a></dd>
+   <dd><a href="#">印度</a></dd>
+ <dt>年代</dt>
+  <dd><a href="#">1950</a></dd>
+  <dd><a href="#">1960</a></dd>
+  <dd><a href="#">1970</a></dd>
+  <dd><a href="#">1980</a></dd>
+  <dd><a href="#">1990</a></dd>
+  <dd><a href="#">2000</a></dd>
+  <dd><a href="#">2002</a></dd>
+   <dd><a href="#">2005</a></dd>
+    <dd><a href="#">2008</a></dd>
+     <dd><a href="#">2010</a></dd>
+     <dd><a href="#">2012</a></dd>
+  </dl>
+  <div class="cl"></div>
+  
+  <div class="order-box mtop20">
+  <h5 class="pai-title">排行</h5>
+   <div class="tab m16" style="padding-left:180px;"><span class="tab-bar hover">播放</span><span class="tab-bar">评分</span></div>
+   <div class="tab-box">
+   <div class="tab_con_box" style="display:block">
+   <ol class="pai-list m16">
+   
+   <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+    <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+     <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+      <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+       <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+        <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+         <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+          <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+           <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+            <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+   </ol>
+   </div>
+   
+   <div class="tab_con_box">
+   <ol class="pai-list m16">
+   
+   <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+    <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+     <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+      <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+      <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+    <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+     <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+      <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+      <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+      <li><span class="num lt"></span><span class="title lt"><a href="#">大太监3333</a></span></li>
+   </ol>
+   </div>
+   </div>
+   </div>
+  </div>
+  <div class="cl"></div>
+</div>
+
+
+<!--<div class="box ">
+<div class="bt-title"><span class="h3 lt">资讯 / <span class="en">News</span></span></div>
+<div class="news-box m16">
 <ul>
-<li><a href="#">【老梁】什么是真正的通货膨asdasd胀</a>　<span class="date">02-14</span></li>
-<li><a href="#">【老梁】什么是真正的通货膨胀</a>　<span class="date">02-24</span></li>
-<li><a href="#">【老梁】什么是真正的通货膨asdasd胀</a>　<span class="date">02-14</span></li>
-<li><a href="#">【老梁】什么是真正的通货膨胀</a>　<span class="date">02-24</span></li>
-<li><a href="#">【老梁】什么是真正的通货膨asdasd胀</a>　<span class="date">02-14</span></li>
-<li><a href="#">【老梁】什么是真正的通货膨胀</a>　<span class="date">02-24</span></li>
-<li><a href="#">【老梁】什么是真正的通货膨asdasd胀</a>　<span class="date">02-14</span></li>
-<li><a href="#">【老梁】什么是真正的通货膨胀</a>　<span class="date">02-24</span></li>
-<li><a href="#">【老梁】什么是真正的通货膨asdasd胀</a>　<span class="date">02-14</span></li>
+<li><a href="#">·最新大片要在很久以后才能上映</a> 12/23</li>
+<li><a href="#">·最新大片要在很久以后才能上映</a> 12/23</li>
+<li><a href="#">·最新大片要在很久以后才能上映</a> 12/23</li>
+<li><a href="#">·最新大片要在很久以后才能上映</a> 12/23</li>
+<li><a href="#">·最新大片要在很久以后才能上映</a> 12/23</li><li><a href="#">·最新大片要在很久以后才能上映</a> 12/23</li>
+<li><a href="#">·最新大片要在很久以后才能上映</a> 12/23</li>
+
+
+<li><a href="#">·最新大片要在很久以后才能上映</a> 12/23</li><li><a href="#">·最新大片要在很久以后才能上映</a> 12/23</li><li><a href="#">·最新大片要在很久以后才能上映</a> 12/23</li><li><a href="#">·最新大片要在很久以后才能上映</a> 12/23</li>
+
 
 </ul>
-<ul>
-<li><a href="#">【老梁】什么是真正的通货膨asdasd胀</a>　<span class="date">02-14</span></li>
-<li><a href="#">【老梁】什么是真正的通货膨胀</a>　<span class="date">02-24</span></li>
-<li><a href="#">【老梁】什么是真正的通货膨asdasd胀</a>　<span class="date">02-14</span></li>
-<li><a href="#">【老梁】什么是真正的通货膨胀</a>　<span class="date">02-24</span></li>
-<li><a href="#">【老梁】什么是真正的通货膨asdasd胀</a>　<span class="date">02-14</span></li>
-<li><a href="#">【老梁】什么是真正的通货膨胀</a>　<span class="date">02-24</span></li>
-<li><a href="#">【老梁】什么是真正的通货膨asdasd胀</a>　<span class="date">02-14</span></li>
-<li><a href="#">【老梁】什么是真正的通货膨胀</a>　<span class="date">02-24</span></li>
-<li><a href="#">【老梁】什么是真正的通货膨asdasd胀</a>　<span class="date">02-14</span></li>
+<div class="cl"></div>
+</div>
+</div>-->
 
+
+<!--友情链接--->
+
+
+
+<div class="cl"></div>
+</div>
+<div id="footer">
+<div class="ft-box">
+
+   <div class="links lt">
+<div class="bt-title"> <span class="more rt"><a href="#">更多</a></span> <span class="h3 lt" style="color:#ccc">友情链接 </span> </div>
+
+<ul class="links-ul m16" style="margin-top:0px;">
+<li><a href="#">资源网站电影站</a></li>
+<li><a href="#">小屋影视网</a></li>
+<li><a href="#">月落无声网</a></li>
+<li><a href="#">资源网站电影站</a></li>
+<li><a href="#">小屋影视网</a></li>
+<li><a href="#">月落无声网</a></li>
 </ul>
-</div>
+<div class="cl"></div>
 </div>
 
-<!--left end-->
-<!--w_right start-->
-<div class="w_right">
-<div class="news r_box">
-<h3><span class="more"><a href="#">[更多]</a></span>最新动态</h3>
-<ul>
-<li>·<a href="#" style="color:#F00;">老梁故事会获得综艺电视节目大奖</a></li>
-<li>·<a href="#" >韩寒遭遇方舟子强力质疑打假</a></li>
-<li>·<a href="#" >犀客网站正式上线欢迎大家提出的意见</a></li>
-<li>·<a href="#" >韩寒遭遇方舟子强力质疑打假</a></li>
-<li>·<a href="#" >犀客网站正式上线欢迎大家提出的意见</a></li>
-<li>·<a href="#" >韩寒遭遇方舟子强力质疑打假</a></li>
-<li>·<a href="#" >犀客网站正式上线欢迎大家提出的意见</a></li>
-<li>·<a href="#" >韩寒遭遇方舟子强力质疑打假</a></li>
-</ul>
-</div>
-<div class="tui_v r_box">
-<h3><span class="more"><a href="#">[更多]</a></span>推荐视频</h3>
-<div class="tui_list">
-<ul>
-<li><a href="#">我陪你睡能花钱让我进北电或　<span class="fenzhong">1:40</span></a></li>
-<li><a href="#">20120214儿钱让我进北电或　<span class="fenzhong">3:40</span></a></li>
-<li><a href="#">我陪你睡能花钱让我进北电或　<span class="fenzhong">1:40</span></a></li>
-<li><a href="#">20120214儿钱让我进北电或　<span class="fenzhong">3:40</span></a></li>
-<li><a href="#">我陪你睡能花钱让我进北电或　<span class="fenzhong">1:40</span></a></li>
-<li><a href="#">20120214儿钱让我进北电或　<span class="fenzhong">3:40</span></a></li>
-<li><a href="#">我陪你睡能花钱让我进北电或　<span class="fenzhong">1:40</span></a></li>
-<li><a href="#">20120214儿钱让我进北电或　<span class="fenzhong">3:40</span></a></li>
-<li><a href="#">我陪你睡能花钱让我进北电或　<span class="fenzhong">1:40</span></a></li>
 
-</ul>
+<div class="bot-nav lt">
+<div class="bt-title"> <span class="more rt"></span> <span class="h3 lt" style="color:#ccc">网站地图/ <span class="en">map</span></span> </div>
 </div>
-</div>
-<!--播放排行--->
-<div class="paihang r_box">
-<h3>点击排行</h3>
-<ul>
-<li><span class="did">23332</span><a href="#">我陪你睡能花钱让我进北电或</a></li>
-<li><span class="did">1200</span><a href="#">我陪你花钱让我进十大电或</a></li>
-<li><span class="did">23332</span><a href="#">我陪你睡能花钱让我进北电或</a></li>
-<li><span class="did">1200</span><a href="#">我陪你花钱让我进十大电或</a></li>
-<li><span class="did">23332</span><a href="#">我陪你睡能花钱让我进北电或</a></li>
-<li><span class="did">1200</span><a href="#">我陪你花钱让我进十大电或</a></li>
-<li><span class="did">1200</span><a href="#">我陪你花钱让我进十大电或</a></li>
-<li><span class="did">1200</span><a href="#">我陪你花钱让我进十大电或</a></li>
-<li><span class="did">1200</span><a href="#">我陪你花钱让我进十大电或</a></li>
-<li><span class="did">1200</span><a href="#">我陪你花钱让我进十大电或</a></li>
-</ul>
-</div>
-<div class="toupiao r_box">
-<h3>网站调查</h3>
-<form method="post" >
-<ul>
-<h2>如何知道本站？</h2>
-<li><input name="diao" type="radio" /> 
-微博、贴吧、论坛上看到的</li>
-<li><input name="diao" type="radio" /> QQ群和论坛上找到的</li>
-<li><input name="diao" type="radio" /> 通过搜索引擎</li>
-<li><input name="diao" type="radio" /> 通过其他方式</li>
-<li><input name="diao" type="submit" value="提交" style="width:100px;" /> </li>
-</ul>
 
-</form>
+
 </div>
 
 </div>
 
-<!--w_right end-->
-</div>
-<!--warrper end--->
-
-<include file="Public:footer"/>
+</body>
+</html>

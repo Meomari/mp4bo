@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<script src="/Public/Js/jquery.js"></script>
+<script  src="/Public/Js/jquery.lazyload.js"></script>
+<link href="/Public/css/common.css" rel="stylesheet" type="text/css">
+<link href="/Public/css/index.css" rel="stylesheet" type="text/css">
+<link href="/Public/css/view.css" rel="stylesheet" type="text/css">
+<link href="/Public/css/pl.css" rel="stylesheet" type="text/css">
+<script src="/Public/Js/jquery.slides.js">
+
+
+</script>
+
+<script>
+$(document).ready(function(e) {
+	         //全局选项卡
+             $('.tab span.tab-bar').hover(function(index) {
+
+                   $(this).addClass('hover').siblings().removeClass('hover');
+		           $(this).parent().next().find(".tab_con_box").eq($(this).index()).fadeIn(0).siblings().fadeOut(0);
+
+			 });
+
+			 //排行数字
+			    p=0
+			   $(".pai-list li span.num").each(function(index, element) {
+                p=p+1
+			    p<4?$(this).css({'background':'#F60','color':'#FFF'}):'';
+				p<10?$(this).text('0'+p):$(this).text(p);
+				p>9?p=0:'';
+
+            });
+
+		    $(".zk-a").click(function(){
+
+			   $("#x-detail").toggle();
+
+			});
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+<div class="top">
+<div class="nav-top">
+<ul class="nv"><li><a href="#">首页</a></li>
+<li><a href="#">导航</a></li>
+</ul>
+  <div class="search lt" style="margin-top:-4px;">
+    <div class="s-form">
+      <form name="search" id="search" method="get" action="">
+        <label class="label-box">
+          <input name="keyword" id="keyword rt" class="keyword"/><button type="submit" class="sbt rt">搜索</button>
+        </label>
+      </form>
+    </div>
+
+  </div>
+</div>
+</div>

@@ -54,11 +54,11 @@ class CommentAction extends GlobalAction
 
     {
 
-        $titleId = intval($_GET['item']);
+       parent::_checkID();
 
         $module = dadds(trim($_GET['mod']));
 
-        $condition="title_id={$titleId} and module='{$module}' and status=0";
+        $condition="title_id={$this->id} and module='{$module}'";
 		
 		
 		

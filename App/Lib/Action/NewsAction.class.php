@@ -55,9 +55,9 @@ class ArticleAction extends GlobalAction
      *
      */
     public function detail(){
-        $titleId = intval($_GET['item']);
-        $commentCount = M('Comment')->where("title_id={$titleId} and module='Article'")->count();
+       parent::_checkID();
+        $commentCount = M('Comment')->where("title_id={$this->id} and module='Article'")->count();
         $this->assign('commentCount', $commentCount);
-        parent::getJoinDetail(array("a.id={$titleId}", "id={$titleId}"), 'view_count', C('DB_PREFIX').'news a', C('DB_PREFIX').'category b on a.category_id=b.id','a.*, b.title as categoryName');
+        parent::getJoinDetail(array("a.id={$this->id}", "id={$this->id}"), 'view_count', C('DB_PREFIX').'news a', C('DB_PREFIX').'category b on a.category_id=b.id','a.*, b.title as categoryName');
     }
 }

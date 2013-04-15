@@ -23,7 +23,7 @@ return array(
     'URL_DISPATCH_ON' => true,
     'URL_MODEL' => 2,//1.带有index.php  2 不带有 index.php
     'Lang_SWITCH_NO' => true,
-    'URL_PATHINFO_MODEL' => 1,
+    'URL_PATHINFO_MODEL' => 2,
     'URL_PATHINFO_DEPR' => '/',
     'URL_HTML_SUFFIX' =>'shtml',
     'DEFAULT_THEME' => 'default',

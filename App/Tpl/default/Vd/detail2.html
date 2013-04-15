@@ -4,7 +4,7 @@
 //获取评论
     $(document).ready(function(){
 	
-	   $("#pl_box").load('{:U("Comment/getList",array("item"=>$detail["id"],"mod"=>$moduleName))}');
+	   $("#pl_box").load('{:U("Comment/getList",array("id"=>$detail["id"],"mod"=>$moduleName))}');
 	   
 	   
 	   

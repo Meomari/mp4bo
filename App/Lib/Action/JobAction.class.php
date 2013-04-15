@@ -46,8 +46,8 @@ class JobAction extends GlobalAction
      *
      */
     public function detail(){
-        $titleId = intval($_GET['item']);
-        parent::getDetail("id={$titleId}", 'view_count');
+       parent::_checkID();
+        parent::getDetail("id={$this->id}", 'view_count');
     }
 
     /**
